@@ -330,7 +330,6 @@ To verify current data source:
 ```bash
 curl localhost:8000/api/health
 
----
 
 # Guardrails
 
