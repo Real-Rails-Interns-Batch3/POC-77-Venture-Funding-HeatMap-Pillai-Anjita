@@ -13,7 +13,7 @@
 
 ---
 
-# 📖 Overview
+# Overview
 
 **Real Rails: Project 77** is a production-style intelligence dashboard that visualizes global venture capital formation.
 
@@ -21,25 +21,25 @@ It answers an important question:
 
 > **Where is capital concentrating, and what does that mean for the infrastructure of innovation?**
 
-The platform reveals geographic clusters of startup funding, enriched with World Bank macroeconomic context and powered by live Crunchbase data with automatic synthetic-data fallback.
+The platform reveals geographic clusters of startup funding, enriched with World Bank macroeconomic context and includes Crunchbase API integration (requires paid key) with automatic synthetic-data fallback
 
 ---
 
-# 🚀 Live Demo Features
+# Live Demo Features
 
 | Feature | Description |
 |----------|------------|
-| 🌍 Global Heatmap | Interactive map showing funding round intensity |
-| 📊 City Rankings | Ranked startup hubs by capital concentration |
-| 🏷️ Sector Cards | AI, FinTech, HealthTech, Clean Energy and more |
-| 📈 Trend Lines | Quarterly capital flow visualization |
-| 🔍 Smart Filters | Filter by sector, stage and years |
-| 💾 CSV Export | Download filtered datasets |
-| 🌐 World Bank Enrichment | GDP, GDP Growth and Business Environment data |
+| Global Heatmap | Interactive map showing funding round intensity |
+| City Rankings | Ranked startup hubs by capital concentration |
+| Sector Cards | AI, FinTech, HealthTech, Clean Energy and more |
+| Trend Lines | Quarterly capital flow visualization |
+| Smart Filters | Filter by sector, stage and years |
+| CSV Export | Download filtered datasets |
+| World Bank Enrichment | GDP, GDP Growth and Business Environment data |
 
 ---
 
-# 💡 Key Insight
+# Key Insight
 
 > Capital formation is not evenly distributed. Funding clusters around a small number of cities and ecosystems. Understanding these clusters reveals both opportunities and concentration risks.
 
@@ -51,7 +51,7 @@ Example:
 
 ---
 
-# 🎨 Visual Identity
+# Visual Identity
 
 ```text
 Background:     #030712 (Obsidian Black)
@@ -67,7 +67,7 @@ Typography:
 
 ---
 
-# 🏗️ Architecture
+# Architecture
 
 ```text
 ┌──────────────────────────────────────────────┐
@@ -100,13 +100,13 @@ Typography:
        ┌───────────┼───────────┐
        ▼           ▼           ▼
 
- Crunchbase   World Bank   Mock Data
-   API           API       Fallback
+  World Bank   Mock Data    Crunchbase
+   API        (Active)     (Optional - needs key)
 ```
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 ```text
 real-rails-77/
@@ -142,7 +142,7 @@ real-rails-77/
 
 ---
 
-# 🔧 Installation
+# Installation
 
 ## Prerequisites
 
@@ -237,7 +237,7 @@ http://localhost:3000
 
 ---
 
-# 🔌 API Endpoints
+# API Endpoints
 
 | Endpoint | Method | Purpose |
 |-----------|---------|----------|
@@ -253,7 +253,7 @@ http://localhost:3000
 
 ---
 
-# 🔍 Query Parameters
+# Query Parameters
 
 All endpoints support:
 
@@ -274,15 +274,15 @@ curl "http://localhost:8000/api/heatmap?sector=AI/ML&stage=Series%20A&year_from=
 
 # 🗺️ Data Sources
 
-| Source | Status |
-|----------|---------|
-| Crunchbase API | Optional |
-| World Bank API | Free |
-| Synthetic Mock Dataset | Automatic Fallback |
+| Source | Status | Notes |
+|--------|--------|-------|
+| Crunchbase API | Not Configured | Requires paid API key - integration ready |
+| World Bank API | Active | Free public API - GDP, growth, business data |
+| Synthetic Mock Data | Active | Generates realistic venture funding rounds |
 
 ---
 
-# 🔑 Enabling Crunchbase
+# Enabling Crunchbase
 
 Get an API key and add:
 
@@ -298,11 +298,11 @@ backend/.env
 
 Restart backend.
 
-If unavailable, the application automatically falls back to synthetic venture funding data.
+Note: Without a valid API key, the application automatically uses synthetic mock data. The dashboard is fully functional with mock data.
 
 ---
 
-# 🎮 Usage Guide
+# Usage Guide
 
 ## Filters
 
@@ -322,27 +322,17 @@ Download all currently filtered funding records.
 
 ---
 
-# 🧪 Testing Fallback Mode
+# Data Source Status
 
-Remove:
+By default, the application uses synthetic mock data. 
 
-```env
-CRUNCHBASE_API_KEY
-```
-
-Restart backend.
-
-Expected response:
-
-```json
-{
-  "data_source": "Synthetic mock data"
-}
-```
+To verify current data source:
+```bash
+curl localhost:8000/api/health
 
 ---
 
-# 🛡️ Guardrails
+# Guardrails
 
 | Feature | Implementation |
 |----------|---------------|
@@ -354,7 +344,7 @@ Expected response:
 
 ---
 
-# 📦 Dependencies
+# Dependencies
 
 ## Frontend
 
@@ -401,7 +391,7 @@ API_PORT=8000
 
 ---
 
-# 🧠 Intelligence Layer
+# Intelligence Layer
 
 | Raw Data | Insight |
 |-----------|----------|
@@ -433,7 +423,7 @@ Downloadable datasets.
 
 ---
 
-# 🤝 Real Rails Standards
+# Real Rails Standards
 
 1. Fresh AI session per PoC
 2. Mandatory 70/30 layout
@@ -441,24 +431,18 @@ Downloadable datasets.
 4. Mock fallback always works
 5. No hardcoded credentials
 
----
-
-# 📄 License
-
-Proprietary — Real Rails Intelligence Library
 
 ---
 
-# 🙏 Acknowledgements
+# Acknowledgements
 
-- Crunchbase
 - World Bank
 - OpenStreetMap
-- Stadia Maps
+- CARTO (Dark Matter Tiles)
 
 ---
 
-# 📞 Support
+# Support
 
 Verify backend:
 
