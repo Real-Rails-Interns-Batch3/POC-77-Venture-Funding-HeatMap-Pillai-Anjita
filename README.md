@@ -373,7 +373,7 @@ python-dotenv==1.0.1
 
 ---
 
-# 🔐 Environment Variables
+# Environment Variables
 
 ## Frontend
 
