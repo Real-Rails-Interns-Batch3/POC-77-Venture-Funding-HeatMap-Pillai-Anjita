@@ -324,12 +324,15 @@ Download all currently filtered funding records.
 
 # Data Source Status
 
-By default, the application uses synthetic mock data. 
+By default, the application uses synthetic mock data.
 
 To verify current data source:
+
 ```bash
 curl localhost:8000/api/health
+```
 
+---
 
 # Guardrails
 
@@ -359,6 +362,8 @@ curl localhost:8000/api/health
   "lucide-react": "^0.344.0"
 }
 ```
+
+---
 
 ## Backend
 
