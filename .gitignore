@@ -1,0 +1,23 @@
+# Environment — NEVER commit secrets
+.env
+.env.local
+backend/.env
+
+# Next.js
+frontend/.next/
+frontend/node_modules/
+frontend/out/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+backend/venv/
+backend/.venv/
+
+# Repomix output
+repomix-output.xml
+
+# OS
+.DS_Store
+Thumbs.db
