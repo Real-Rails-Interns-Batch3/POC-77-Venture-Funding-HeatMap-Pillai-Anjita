@@ -463,11 +463,3 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 Check browser console for API issues.
 
 ---
-
-<div align="center">
-
-Built with ☕ and Electric Cyan
-
-**Real Rails Intelligence Library**
-
-</div>
