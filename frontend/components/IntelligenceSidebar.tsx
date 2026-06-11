@@ -348,7 +348,7 @@ export default function IntelligenceSidebar({
       {/* SECTION E — Download */}
       <div className="px-4 py-3">
         <a
-        href={`http://localhost:8000/api/download/sample?sector=${filters.sector}&stage=${filters.stage}&year_from=${filters.yearFrom}&year_to=${filters.yearTo}`}
+        href={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/api/download/sample?sector=${filters.sector}&stage=${filters.stage}&year_from=${filters.yearFrom}&year_to=${filters.yearTo}`}
         download
         className="flex items-center justify-center gap-2 w-full py-2 rounded border border-cyan-pulse/30 text-cyan-pulse text-xs font-medium hover:bg-cyan-pulse/10 transition-all"
         >

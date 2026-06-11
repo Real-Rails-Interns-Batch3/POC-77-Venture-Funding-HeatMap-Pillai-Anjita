@@ -21,6 +21,8 @@ import asyncio
 from typing import Optional
 from datetime import datetime, timedelta
 from functools import lru_cache
+# Import mock data package
+from mock_data import MockDataGenerator, export_to_csv, export_to_json
 
 app = FastAPI(
     title="Real Rails — Venture Funding Heatmap API",
@@ -49,36 +51,14 @@ _wb_cache: dict = {}
 _wb_cache_ts: dict = {}
 CACHE_TTL_SECONDS = 3600
 
-SECTORS = ["FinTech", "HealthTech", "CleanEnergy", "DeepTech", "AI/ML", "Logistics", "EdTech", "AgriTech"]
-STAGES = ["Pre-Seed", "Seed", "Series A", "Series B", "Series C", "Series D+", "Growth"]
-INVESTORS = [
-    "Sequoia Capital", "Andreessen Horowitz", "Tiger Global", "SoftBank Vision Fund",
-    "Accel Partners", "Kleiner Perkins", "Bessemer Venture Partners", "General Catalyst",
-    "GV", "Insight Partners"
-]
+# Initialize mock data generator
+mock_generator = MockDataGenerator(seed=42)
 
-HUBS = [
-    {"city": "San Francisco", "country": "USA", "country_code": "US", "lat": 37.7749, "lng": -122.4194, "weight": 1.0},
-    {"city": "New York", "country": "USA", "country_code": "US", "lat": 40.7128, "lng": -74.0060, "weight": 0.85},
-    {"city": "London", "country": "UK", "country_code": "GB", "lat": 51.5074, "lng": -0.1278, "weight": 0.75},
-    {"city": "Beijing", "country": "China", "country_code": "CN", "lat": 39.9042, "lng": 116.4074, "weight": 0.70},
-    {"city": "Shanghai", "country": "China", "country_code": "CN", "lat": 31.2304, "lng": 121.4737, "weight": 0.65},
-    {"city": "Berlin", "country": "Germany", "country_code": "DE", "lat": 52.5200, "lng": 13.4050, "weight": 0.55},
-    {"city": "Bangalore", "country": "India", "country_code": "IN", "lat": 12.9716, "lng": 77.5946, "weight": 0.60},
-    {"city": "Tel Aviv", "country": "Israel", "country_code": "IL", "lat": 32.0853, "lng": 34.7818, "weight": 0.50},
-    {"city": "Singapore", "country": "Singapore", "country_code": "SG", "lat": 1.3521, "lng": 103.8198, "weight": 0.55},
-    {"city": "Boston", "country": "USA", "country_code": "US", "lat": 42.3601, "lng": -71.0589, "weight": 0.60},
-    {"city": "Austin", "country": "USA", "country_code": "US", "lat": 30.2672, "lng": -97.7431, "weight": 0.45},
-    {"city": "Seattle", "country": "USA", "country_code": "US", "lat": 47.6062, "lng": -122.3321, "weight": 0.50},
-    {"city": "Paris", "country": "France", "country_code": "FR", "lat": 48.8566, "lng": 2.3522, "weight": 0.45},
-    {"city": "Stockholm", "country": "Sweden", "country_code": "SE", "lat": 59.3293, "lng": 18.0686, "weight": 0.40},
-    {"city": "Toronto", "country": "Canada", "country_code": "CA", "lat": 43.6532, "lng": -79.3832, "weight": 0.45},
-    {"city": "São Paulo", "country": "Brazil", "country_code": "BR", "lat": -23.5505, "lng": -46.6333, "weight": 0.35},
-    {"city": "Dubai", "country": "UAE", "country_code": "AE", "lat": 25.2048, "lng": 55.2708, "weight": 0.35},
-    {"city": "Tokyo", "country": "Japan", "country_code": "JP", "lat": 35.6762, "lng": 139.6503, "weight": 0.40},
-    {"city": "Sydney", "country": "Australia", "country_code": "AU", "lat": -33.8688, "lng": 151.2093, "weight": 0.35},
-    {"city": "Amsterdam", "country": "Netherlands", "country_code": "NL", "lat": 52.3676, "lng": 4.9041, "weight": 0.38},
-]
+# Get constants from mock generator
+SECTORS = mock_generator.sectors
+STAGES = mock_generator.stages
+INVESTORS = mock_generator.investors
+HUBS = mock_generator.hubs
 
 # Country code → hub lookup for World Bank enrichment
 COUNTRY_CODE_TO_HUB = {h["country_code"]: h for h in HUBS}
@@ -340,50 +320,16 @@ async def fetch_crunchbase_rounds(
 
 
 # ─────────────────────────────────────────────
-# MOCK DATA GENERATION (final fallback)
+# MOCK DATA GENERATION (using mock-data package)
 # ─────────────────────────────────────────────
 
-random.seed(42)
-
-def _generate_rounds(n=300) -> list[dict]:
-    rows = []
-    base_date = datetime(2019, 1, 1)
-    for i in range(n):
-        hub = random.choices(HUBS, weights=[h["weight"] for h in HUBS])[0]
-        stage = random.choices(
-            STAGES,
-            weights=[0.08, 0.20, 0.22, 0.18, 0.12, 0.08, 0.12]
-        )[0]
-        stage_multiplier = {
-            "Pre-Seed": 0.5, "Seed": 1.0, "Series A": 3.5,
-            "Series B": 10.0, "Series C": 30.0, "Series D+": 80.0, "Growth": 120.0
-        }[stage]
-        amount_usd_m = round(random.gauss(stage_multiplier, stage_multiplier * 0.4), 2)
-        amount_usd_m = max(0.1, amount_usd_m)
-        days_offset = random.randint(0, (datetime(2024, 12, 31) - base_date).days)
-        deal_date = base_date + timedelta(days=days_offset)
-        rows.append({
-            "id": f"deal_{i:04d}",
-            "company": f"Company {i+1}",
-            "city": hub["city"],
-            "country": hub["country"],
-            "lat": hub["lat"] + random.gauss(0, 0.3),
-            "lng": hub["lng"] + random.gauss(0, 0.3),
-            "sector": random.choice(SECTORS),
-            "stage": stage,
-            "amount_usd_m": amount_usd_m,
-            "lead_investor": random.choice(INVESTORS),
-            "date": deal_date.strftime("%Y-%m-%d"),
-            "year": deal_date.year,
-        })
-    return rows
-
-MOCK_ROUNDS = _generate_rounds(300)
-
-
-def _build_df(rounds: list[dict]) -> pd.DataFrame:
-    df = pd.DataFrame(rounds)
-    df["pct_above_avg"] = ((df["amount_usd_m"] - REGIONAL_AVG_USD_M) / REGIONAL_AVG_USD_M * 100).round(1)
+def _build_df(df: pd.DataFrame) -> pd.DataFrame:
+    """Add calculated fields to DataFrame"""
+    df = df.copy()
+    if "pct_above_global_avg" in df.columns:
+        df["pct_above_avg"] = df["pct_above_global_avg"]
+    else:
+        df["pct_above_avg"] = ((df["amount_usd_m"] - REGIONAL_AVG_USD_M) / REGIONAL_AVG_USD_M * 100).round(1)
     return df
 
 
@@ -395,25 +341,31 @@ async def _get_rounds(
 ) -> tuple[pd.DataFrame, str]:
     """
     Returns (DataFrame, data_source_label).
-    Priority: Crunchbase live → mock synthetic
+    Priority: Crunchbase live → mock data package
     """
-    cb_rounds = await fetch_crunchbase_rounds(sector, stage, year_from, year_to)
-    if cb_rounds:
-        df = _build_df(cb_rounds)
-        source = "Crunchbase API (live data)"
-        return df, source
-
-    # Mock fallback
-    df = _build_df(MOCK_ROUNDS)
-    if sector and sector != "All":
-        df = df[df["sector"] == sector]
-    if stage and stage != "All":
-        df = df[df["stage"] == stage]
-    if year_from:
-        df = df[df["year"] >= year_from]
-    if year_to:
-        df = df[df["year"] <= year_to]
-    source = "Synthetic mock data (set CRUNCHBASE_API_KEY for live data)"
+    # Try Crunchbase first if API key is configured
+    if CRUNCHBASE_API_KEY:
+        cb_rounds = await fetch_crunchbase_rounds(sector, stage, year_from, year_to)
+        if cb_rounds and len(cb_rounds) > 0:
+            df = pd.DataFrame(cb_rounds)
+            df = _build_df(df)
+            source = "🔴 LIVE: Crunchbase API (real venture capital data)"
+            return df, source
+    
+    # Fallback to mock data package (clearly labeled as synthetic)
+    df = mock_generator.generate_with_filters(
+        sector=sector,
+        stage=stage,
+        year_from=year_from or 2019,
+        year_to=year_to or 2024,
+        num_rows=500
+    )
+    df = _build_df(df)
+    
+    source = "⚠️ SYNTHETIC MOCK DATA - Demonstration purposes only. Not real investment data."
+    if not CRUNCHBASE_API_KEY:
+        source += " Set CRUNCHBASE_API_KEY in .env to use real Crunchbase data."
+    
     return df, source
 
 
@@ -427,8 +379,17 @@ async def health():
         "status": "ok",
         "rail": "Capital Formation",
         "project": "Venture Funding Heatmap",
+        "data_mode": "synthetic_mock" if not CRUNCHBASE_API_KEY else "crunchbase_live",
+        "data_quality_note": "⚠️ All data is synthetic unless Crunchbase API key is configured",
         "crunchbase_configured": bool(CRUNCHBASE_API_KEY),
         "world_bank": "enabled (public API)",
+        "mock_data_endpoints": [
+            "/api/mock/data-dictionary",
+            "/api/mock/export/csv",
+            "/api/mock/export/json",
+            "/api/mock/edge-cases",
+            "/api/mock/sample-rows"
+        ]
     }
 
 
@@ -646,28 +607,40 @@ async def download_sample(
 ):
     """
     CSV download of funding rounds matching current filters.
-    Returns filtered data (same as heatmap view), not random sample.
+    Uses mock data package with clear synthetic labeling.
     """
-    # Get filtered data (same as heatmap endpoint)
+    # Get filtered data using mock generator
     df, source = await _get_rounds(sector, stage, year_from, year_to)
     
     # Select columns for export
-    export_df = df[[
-        "company", "city", "country", "sector", "stage",
-        "amount_usd_m", "lead_investor", "date", "pct_above_avg"
-    ]].copy()
+    export_cols = ["company", "city", "country", "sector", "stage", 
+                   "amount_usd_m", "lead_investor", "date", "pct_above_avg"]
+    
+    # Only use columns that exist
+    available_cols = [col for col in export_cols if col in df.columns]
+    export_df = df[available_cols].copy()
     
     # Rename columns for better readability
-    export_df.columns = [
-        "Company", "City", "Country", "Sector", "Stage",
-        "Amount_USD_Millions", "Lead_Investor", "Date", "Pct_Above_Global_Avg"
-    ]
+    column_renames = {
+        "company": "Company",
+        "city": "City", 
+        "country": "Country",
+        "sector": "Sector",
+        "stage": "Stage",
+        "amount_usd_m": "Amount_USD_Millions",
+        "lead_investor": "Lead_Investor",
+        "date": "Date",
+        "pct_above_avg": "Pct_Above_Global_Avg"
+    }
+    export_df = export_df.rename(columns={k: v for k, v in column_renames.items() if k in export_df.columns})
     
-    # Add a helpful note about the data source
+    # Add clear synthetic data warning
+    export_df.insert(0, "DATA_QUALITY_NOTE", "⚠️ SYNTHETIC DATA - Not real investment information")
     export_df["Data_Source"] = source
     
     # Sort by date (newest first)
-    export_df = export_df.sort_values("Date", ascending=False)
+    if "Date" in export_df.columns:
+        export_df = export_df.sort_values("Date", ascending=False)
     
     # Create CSV in memory
     buf = io.StringIO()
@@ -684,7 +657,7 @@ async def download_sample(
     if year_from:
         filter_str += f"_{year_from}-{year_to if year_to else 'present'}"
     
-    filename = f"real_rails_funding{filter_str}_{timestamp}.csv"
+    filename = f"real_rails_synthetic_funding{filter_str}_{timestamp}.csv"
     
     return StreamingResponse(
         iter([buf.getvalue()]),
@@ -692,6 +665,128 @@ async def download_sample(
         headers={"Content-Disposition": f"attachment; filename={filename}"},
     )
 
+
+# ─────────────────────────────────────────────
+# MOCK DATA EXPORT ENDPOINTS (New)
+# ─────────────────────────────────────────────
+
+@app.get("/api/mock/data-dictionary")
+async def get_data_dictionary():
+    """
+    Returns the complete data dictionary for the mock dataset.
+    Includes entity definitions, field specifications, and statistical distributions.
+    """
+    return mock_generator.get_data_dictionary()
+
+
+@app.get("/api/mock/export/csv")
+async def export_mock_csv(
+    sector: Optional[str] = Query(None),
+    stage: Optional[str] = Query(None),
+    year_from: Optional[int] = Query(None),
+    year_to: Optional[int] = Query(None),
+    include_edge_cases: bool = Query(False, description="Include edge cases and error scenarios"),
+    num_rows: int = Query(500, ge=1, le=5000, description="Number of synthetic rows to generate")
+):
+    """
+    Export synthetic funding data as CSV.
+    All data is clearly labeled as synthetic/mock.
+    """
+    # Generate base dataset
+    df = mock_generator.generate_with_filters(
+        sector=sector,
+        stage=stage,
+        year_from=year_from or 2019,
+        year_to=year_to or 2024,
+        num_rows=num_rows
+    )
+    
+    # Optionally include edge cases
+    if include_edge_cases:
+        edge_df = mock_generator.generate_edge_cases()
+        df = pd.concat([df, edge_df], ignore_index=True)
+    
+    # Add metadata note column
+    df["data_quality_note"] = "⚠️ SYNTHETIC DATA - For demonstration only. Not real investment data."
+    
+    csv_content = export_to_csv(df, include_metadata=True)
+    
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"real_rails_synthetic_funding_{timestamp}.csv"
+    
+    return StreamingResponse(
+        iter([csv_content]),
+        media_type="text/csv",
+        headers={"Content-Disposition": f"attachment; filename={filename}"}
+    )
+
+
+@app.get("/api/mock/export/json")
+async def export_mock_json(
+    sector: Optional[str] = Query(None),
+    stage: Optional[str] = Query(None),
+    year_from: Optional[int] = Query(None),
+    year_to: Optional[int] = Query(None),
+    include_edge_cases: bool = Query(False, description="Include edge cases and error scenarios"),
+    num_rows: int = Query(500, ge=1, le=5000)
+):
+    """
+    Export synthetic funding data as JSON.
+    All data is clearly labeled as synthetic/mock.
+    """
+    df = mock_generator.generate_with_filters(
+        sector=sector,
+        stage=stage,
+        year_from=year_from or 2019,
+        year_to=year_to or 2024,
+        num_rows=num_rows
+    )
+    
+    if include_edge_cases:
+        edge_df = mock_generator.generate_edge_cases()
+        df = pd.concat([df, edge_df], ignore_index=True)
+    
+    json_content = export_to_json(df, include_metadata=True)
+    
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"real_rails_synthetic_funding_{timestamp}.json"
+    
+    return StreamingResponse(
+        iter([json_content]),
+        media_type="application/json",
+        headers={"Content-Disposition": f"attachment; filename={filename}"}
+    )
+
+
+@app.get("/api/mock/edge-cases")
+async def get_edge_cases():
+    """
+    Returns a dataset of edge cases and error scenarios for testing.
+    Includes: outlier deals, missing data, future dates, negative amounts.
+    """
+    edge_df = mock_generator.generate_edge_cases()
+    records = edge_df.to_dict(orient="records")
+    
+    return {
+        "data_quality_note": "⚠️ SYNTHETIC DATA - Edge cases for testing error handling",
+        "edge_case_count": len(records),
+        "edge_cases": records
+    }
+
+
+@app.get("/api/mock/sample-rows")
+async def get_sample_rows(num_rows: int = Query(10, ge=1, le=50)):
+    """
+    Returns a small sample of realistic synthetic rows for preview.
+    """
+    df = mock_generator.generate_dataset(num_rows=min(num_rows, 50), year_from=2023, year_to=2024)
+    records = df.to_dict(orient="records")
+    
+    return {
+        "data_quality_note": "⚠️ SYNTHETIC SAMPLE DATA - Preview only",
+        "sample_size": len(records),
+        "sample_data": records
+    }
 
 @app.get("/api/summary")
 async def get_summary(
