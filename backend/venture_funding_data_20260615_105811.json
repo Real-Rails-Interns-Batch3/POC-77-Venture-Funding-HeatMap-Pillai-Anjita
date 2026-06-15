@@ -1,10 +1,10 @@
 {
   "data_quality_note": "\u26a0\ufe0f SYNTHETIC DATA - For demonstration purposes only. Not real investment data.",
-  "generated_at": "2026-06-15T09:46:54.528008",
+  "generated_at": "2026-06-15T10:58:11.809060",
   "record_count": 500,
   "data": [
     {
-      "id": "synth_7943a6bc",
+      "id": "synth_aef60743",
       "company": "SynthCorp 1",
       "city": "Austin",
       "country": "USA",
@@ -22,7 +22,7 @@
       "pct_above_global_avg": -98.2
     },
     {
-      "id": "synth_56073132",
+      "id": "synth_b2b273c5",
       "company": "SynthCorp 2",
       "city": "Bangalore",
       "country": "India",
@@ -40,7 +40,7 @@
       "pct_above_global_avg": -99.6
     },
     {
-      "id": "synth_9e86cd6f",
+      "id": "synth_15054b7f",
       "company": "SynthCorp 3",
       "city": "Austin",
       "country": "USA",
@@ -58,7 +58,7 @@
       "pct_above_global_avg": -59.3
     },
     {
-      "id": "synth_c7ed1866",
+      "id": "synth_8ef78d05",
       "company": "SynthCorp 4",
       "city": "Beijing",
       "country": "China",
@@ -76,7 +76,7 @@
       "pct_above_global_avg": -97.2
     },
     {
-      "id": "synth_4f7a3405",
+      "id": "synth_f59abca1",
       "company": "SynthCorp 5",
       "city": "Boston",
       "country": "USA",
@@ -94,7 +94,7 @@
       "pct_above_global_avg": 177.8
     },
     {
-      "id": "synth_4741b888",
+      "id": "synth_08171e29",
       "company": "SynthCorp 6",
       "city": "London",
       "country": "UK",
@@ -112,7 +112,7 @@
       "pct_above_global_avg": -97.9
     },
     {
-      "id": "synth_b328386d",
+      "id": "synth_78336ccf",
       "company": "SynthCorp 7",
       "city": "Berlin",
       "country": "Germany",
@@ -130,7 +130,7 @@
       "pct_above_global_avg": -85.5
     },
     {
-      "id": "synth_cc4243f8",
+      "id": "synth_daf3d003",
       "company": "SynthCorp 8",
       "city": "Austin",
       "country": "USA",
@@ -148,7 +148,7 @@
       "pct_above_global_avg": -51.6
     },
     {
-      "id": "synth_670de646",
+      "id": "synth_48d2f528",
       "company": "SynthCorp 9",
       "city": "Shanghai",
       "country": "China",
@@ -166,7 +166,7 @@
       "pct_above_global_avg": 88.7
     },
     {
-      "id": "synth_8afa63b7",
+      "id": "synth_40b83569",
       "company": "SynthCorp 10",
       "city": "Austin",
       "country": "USA",
@@ -184,7 +184,7 @@
       "pct_above_global_avg": -85.9
     },
     {
-      "id": "synth_0988e96b",
+      "id": "synth_4cd0574f",
       "company": "SynthCorp 11",
       "city": "Boston",
       "country": "USA",
@@ -202,7 +202,7 @@
       "pct_above_global_avg": 243.7
     },
     {
-      "id": "synth_a5314aef",
+      "id": "synth_bc3d7392",
       "company": "SynthCorp 12",
       "city": "New York",
       "country": "USA",
@@ -220,7 +220,7 @@
       "pct_above_global_avg": -96.3
     },
     {
-      "id": "synth_6bc8e0db",
+      "id": "synth_934a3d40",
       "company": "SynthCorp 13",
       "city": "Beijing",
       "country": "China",
@@ -238,7 +238,7 @@
       "pct_above_global_avg": -42.0
     },
     {
-      "id": "synth_3f45e35a",
+      "id": "synth_98b003dd",
       "company": "SynthCorp 14",
       "city": "Shanghai",
       "country": "China",
@@ -256,7 +256,7 @@
       "pct_above_global_avg": -92.9
     },
     {
-      "id": "synth_76341a5e",
+      "id": "synth_f793f68f",
       "company": "SynthCorp 15",
       "city": "Stockholm",
       "country": "Sweden",
@@ -274,7 +274,7 @@
       "pct_above_global_avg": -46.6
     },
     {
-      "id": "synth_9eb6d336",
+      "id": "synth_9ca2cf1f",
       "company": "SynthCorp 16",
       "city": "Sydney",
       "country": "Australia",
@@ -292,7 +292,7 @@
       "pct_above_global_avg": 279.9
     },
     {
-      "id": "synth_57588d90",
+      "id": "synth_71e78bb1",
       "company": "SynthCorp 17",
       "city": "Dubai",
       "country": "UAE",
@@ -310,7 +310,7 @@
       "pct_above_global_avg": 182.0
     },
     {
-      "id": "synth_5e58d2ef",
+      "id": "synth_3d05b4c4",
       "company": "SynthCorp 18",
       "city": "Stockholm",
       "country": "Sweden",
@@ -328,7 +328,7 @@
       "pct_above_global_avg": -95.4
     },
     {
-      "id": "synth_9a0e2089",
+      "id": "synth_4dfee166",
       "company": "SynthCorp 19",
       "city": "Tokyo",
       "country": "Japan",
@@ -346,7 +346,7 @@
       "pct_above_global_avg": -14.7
     },
     {
-      "id": "synth_46333f45",
+      "id": "synth_e438b473",
       "company": "SynthCorp 20",
       "city": "Bangalore",
       "country": "India",
@@ -364,7 +364,7 @@
       "pct_above_global_avg": -96.4
     },
     {
-      "id": "synth_3bc1d79c",
+      "id": "synth_013d77b2",
       "company": "SynthCorp 21",
       "city": "London",
       "country": "UK",
@@ -382,7 +382,7 @@
       "pct_above_global_avg": -98.5
     },
     {
-      "id": "synth_73c7ae21",
+      "id": "synth_7e6f9c1b",
       "company": "SynthCorp 22",
       "city": "Seattle",
       "country": "USA",
@@ -400,7 +400,7 @@
       "pct_above_global_avg": -96.7
     },
     {
-      "id": "synth_7f27f90b",
+      "id": "synth_8deac2f4",
       "company": "SynthCorp 23",
       "city": "Stockholm",
       "country": "Sweden",
@@ -418,7 +418,7 @@
       "pct_above_global_avg": 216.0
     },
     {
-      "id": "synth_f129ebaf",
+      "id": "synth_1945ed78",
       "company": "SynthCorp 24",
       "city": "Austin",
       "country": "USA",
@@ -436,7 +436,7 @@
       "pct_above_global_avg": -50.9
     },
     {
-      "id": "synth_65c37aed",
+      "id": "synth_bed08b22",
       "company": "SynthCorp 25",
       "city": "London",
       "country": "UK",
@@ -454,7 +454,7 @@
       "pct_above_global_avg": -56.9
     },
     {
-      "id": "synth_b017aa49",
+      "id": "synth_2bdb084d",
       "company": "SynthCorp 26",
       "city": "New York",
       "country": "USA",
@@ -472,7 +472,7 @@
       "pct_above_global_avg": -29.4
     },
     {
-      "id": "synth_4543fc27",
+      "id": "synth_f64d2018",
       "company": "SynthCorp 27",
       "city": "Berlin",
       "country": "Germany",
@@ -490,7 +490,7 @@
       "pct_above_global_avg": -79.7
     },
     {
-      "id": "synth_acad6fac",
+      "id": "synth_0016fce7",
       "company": "SynthCorp 28",
       "city": "Beijing",
       "country": "China",
@@ -508,7 +508,7 @@
       "pct_above_global_avg": 100.2
     },
     {
-      "id": "synth_c643aee1",
+      "id": "synth_f081db34",
       "company": "SynthCorp 29",
       "city": "Paris",
       "country": "France",
@@ -526,7 +526,7 @@
       "pct_above_global_avg": -98.2
     },
     {
-      "id": "synth_f08c1a30",
+      "id": "synth_6afc6172",
       "company": "SynthCorp 30",
       "city": "Sydney",
       "country": "Australia",
@@ -544,7 +544,7 @@
       "pct_above_global_avg": -96.3
     },
     {
-      "id": "synth_c88e73f1",
+      "id": "synth_5a96c272",
       "company": "SynthCorp 31",
       "city": "New York",
       "country": "USA",
@@ -562,7 +562,7 @@
       "pct_above_global_avg": 350.3
     },
     {
-      "id": "synth_af670446",
+      "id": "synth_753c57a5",
       "company": "SynthCorp 32",
       "city": "London",
       "country": "UK",
@@ -580,7 +580,7 @@
       "pct_above_global_avg": 39.8
     },
     {
-      "id": "synth_925758e4",
+      "id": "synth_a7a86979",
       "company": "SynthCorp 33",
       "city": "Shanghai",
       "country": "China",
@@ -598,7 +598,7 @@
       "pct_above_global_avg": 55.4
     },
     {
-      "id": "synth_032e545c",
+      "id": "synth_1bf48fcf",
       "company": "SynthCorp 34",
       "city": "Sydney",
       "country": "Australia",
@@ -616,7 +616,7 @@
       "pct_above_global_avg": 399.4
     },
     {
-      "id": "synth_ebc11543",
+      "id": "synth_afadb72f",
       "company": "SynthCorp 35",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -634,7 +634,7 @@
       "pct_above_global_avg": 23.3
     },
     {
-      "id": "synth_8bff5412",
+      "id": "synth_6183abae",
       "company": "SynthCorp 36",
       "city": "New York",
       "country": "USA",
@@ -652,7 +652,7 @@
       "pct_above_global_avg": -96.6
     },
     {
-      "id": "synth_795e39b9",
+      "id": "synth_51549128",
       "company": "SynthCorp 37",
       "city": "Seattle",
       "country": "USA",
@@ -670,7 +670,7 @@
       "pct_above_global_avg": 106.3
     },
     {
-      "id": "synth_b1f19685",
+      "id": "synth_c9291c6f",
       "company": "SynthCorp 38",
       "city": "San Francisco",
       "country": "USA",
@@ -688,7 +688,7 @@
       "pct_above_global_avg": 36.7
     },
     {
-      "id": "synth_7f21d2be",
+      "id": "synth_b5d77d94",
       "company": "SynthCorp 39",
       "city": "San Francisco",
       "country": "USA",
@@ -706,7 +706,7 @@
       "pct_above_global_avg": -97.0
     },
     {
-      "id": "synth_da7041ef",
+      "id": "synth_56b5777d",
       "company": "SynthCorp 40",
       "city": "New York",
       "country": "USA",
@@ -724,7 +724,7 @@
       "pct_above_global_avg": -93.0
     },
     {
-      "id": "synth_988c4095",
+      "id": "synth_2932d5b1",
       "company": "SynthCorp 41",
       "city": "New York",
       "country": "USA",
@@ -742,7 +742,7 @@
       "pct_above_global_avg": 45.1
     },
     {
-      "id": "synth_c411c105",
+      "id": "synth_ddea401e",
       "company": "SynthCorp 42",
       "city": "Dubai",
       "country": "UAE",
@@ -760,7 +760,7 @@
       "pct_above_global_avg": -98.4
     },
     {
-      "id": "synth_1032f652",
+      "id": "synth_aaf949ee",
       "company": "SynthCorp 43",
       "city": "New York",
       "country": "USA",
@@ -778,7 +778,7 @@
       "pct_above_global_avg": 1.9
     },
     {
-      "id": "synth_877a815a",
+      "id": "synth_a11e2174",
       "company": "SynthCorp 44",
       "city": "Shanghai",
       "country": "China",
@@ -796,7 +796,7 @@
       "pct_above_global_avg": 91.8
     },
     {
-      "id": "synth_3f0df5c9",
+      "id": "synth_9a726c08",
       "company": "SynthCorp 45",
       "city": "Beijing",
       "country": "China",
@@ -814,7 +814,7 @@
       "pct_above_global_avg": -98.0
     },
     {
-      "id": "synth_36708999",
+      "id": "synth_82123115",
       "company": "SynthCorp 46",
       "city": "New York",
       "country": "USA",
@@ -832,7 +832,7 @@
       "pct_above_global_avg": 640.1
     },
     {
-      "id": "synth_93ce69fe",
+      "id": "synth_6515c2b4",
       "company": "SynthCorp 47",
       "city": "Boston",
       "country": "USA",
@@ -850,7 +850,7 @@
       "pct_above_global_avg": -85.8
     },
     {
-      "id": "synth_10d70ad7",
+      "id": "synth_5c88b567",
       "company": "SynthCorp 48",
       "city": "San Francisco",
       "country": "USA",
@@ -868,7 +868,7 @@
       "pct_above_global_avg": -79.7
     },
     {
-      "id": "synth_4f8a307e",
+      "id": "synth_a73c7794",
       "company": "SynthCorp 49",
       "city": "Bangalore",
       "country": "India",
@@ -886,7 +886,7 @@
       "pct_above_global_avg": 563.0
     },
     {
-      "id": "synth_70c4d00b",
+      "id": "synth_b16f6ea3",
       "company": "SynthCorp 50",
       "city": "Berlin",
       "country": "Germany",
@@ -904,7 +904,7 @@
       "pct_above_global_avg": -91.3
     },
     {
-      "id": "synth_0570a5dd",
+      "id": "synth_22c20271",
       "company": "SynthCorp 51",
       "city": "Paris",
       "country": "France",
@@ -922,7 +922,7 @@
       "pct_above_global_avg": -97.7
     },
     {
-      "id": "synth_0e86fac4",
+      "id": "synth_86727a80",
       "company": "SynthCorp 52",
       "city": "Bangalore",
       "country": "India",
@@ -940,7 +940,7 @@
       "pct_above_global_avg": -53.3
     },
     {
-      "id": "synth_69cd4552",
+      "id": "synth_2449b5ec",
       "company": "SynthCorp 53",
       "city": "San Francisco",
       "country": "USA",
@@ -958,7 +958,7 @@
       "pct_above_global_avg": -71.9
     },
     {
-      "id": "synth_1bace732",
+      "id": "synth_f081a3da",
       "company": "SynthCorp 54",
       "city": "San Francisco",
       "country": "USA",
@@ -976,7 +976,7 @@
       "pct_above_global_avg": -97.2
     },
     {
-      "id": "synth_23970e1a",
+      "id": "synth_ae101236",
       "company": "SynthCorp 55",
       "city": "Dubai",
       "country": "UAE",
@@ -994,7 +994,7 @@
       "pct_above_global_avg": -65.8
     },
     {
-      "id": "synth_e1db8d61",
+      "id": "synth_864bd421",
       "company": "SynthCorp 56",
       "city": "Stockholm",
       "country": "Sweden",
@@ -1012,7 +1012,7 @@
       "pct_above_global_avg": -94.1
     },
     {
-      "id": "synth_cec13dbc",
+      "id": "synth_2509cbaf",
       "company": "SynthCorp 57",
       "city": "New York",
       "country": "USA",
@@ -1030,7 +1030,7 @@
       "pct_above_global_avg": -93.6
     },
     {
-      "id": "synth_f8a5b2a4",
+      "id": "synth_e5f1f5b6",
       "company": "SynthCorp 58",
       "city": "Bangalore",
       "country": "India",
@@ -1048,7 +1048,7 @@
       "pct_above_global_avg": -97.3
     },
     {
-      "id": "synth_a9c55433",
+      "id": "synth_e1d69dcf",
       "company": "SynthCorp 59",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -1066,7 +1066,7 @@
       "pct_above_global_avg": -98.5
     },
     {
-      "id": "synth_5639731f",
+      "id": "synth_d0976f69",
       "company": "SynthCorp 60",
       "city": "New York",
       "country": "USA",
@@ -1084,7 +1084,7 @@
       "pct_above_global_avg": -82.5
     },
     {
-      "id": "synth_3cb7000a",
+      "id": "synth_62109170",
       "company": "SynthCorp 61",
       "city": "Singapore",
       "country": "Singapore",
@@ -1102,7 +1102,7 @@
       "pct_above_global_avg": -85.6
     },
     {
-      "id": "synth_f9130851",
+      "id": "synth_4e8cb1d7",
       "company": "SynthCorp 62",
       "city": "San Francisco",
       "country": "USA",
@@ -1120,7 +1120,7 @@
       "pct_above_global_avg": -94.0
     },
     {
-      "id": "synth_00fce0b9",
+      "id": "synth_a39cd5c1",
       "company": "SynthCorp 63",
       "city": "Paris",
       "country": "France",
@@ -1138,7 +1138,7 @@
       "pct_above_global_avg": -71.3
     },
     {
-      "id": "synth_7026c3d6",
+      "id": "synth_9fd78237",
       "company": "SynthCorp 64",
       "city": "Seattle",
       "country": "USA",
@@ -1156,7 +1156,7 @@
       "pct_above_global_avg": 61.9
     },
     {
-      "id": "synth_e9e9629a",
+      "id": "synth_67104450",
       "company": "SynthCorp 65",
       "city": "Boston",
       "country": "USA",
@@ -1174,7 +1174,7 @@
       "pct_above_global_avg": -49.4
     },
     {
-      "id": "synth_3c47877e",
+      "id": "synth_0a0606ec",
       "company": "SynthCorp 66",
       "city": "Bangalore",
       "country": "India",
@@ -1192,7 +1192,7 @@
       "pct_above_global_avg": -83.4
     },
     {
-      "id": "synth_93703ec8",
+      "id": "synth_1847aab2",
       "company": "SynthCorp 67",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -1210,7 +1210,7 @@
       "pct_above_global_avg": -87.0
     },
     {
-      "id": "synth_285b0703",
+      "id": "synth_46654124",
       "company": "SynthCorp 68",
       "city": "Sydney",
       "country": "Australia",
@@ -1228,7 +1228,7 @@
       "pct_above_global_avg": -95.7
     },
     {
-      "id": "synth_32e77533",
+      "id": "synth_3bba0c84",
       "company": "SynthCorp 69",
       "city": "New York",
       "country": "USA",
@@ -1246,7 +1246,7 @@
       "pct_above_global_avg": 211.1
     },
     {
-      "id": "synth_62e4e2e5",
+      "id": "synth_fb283768",
       "company": "SynthCorp 70",
       "city": "Sydney",
       "country": "Australia",
@@ -1264,7 +1264,7 @@
       "pct_above_global_avg": -94.5
     },
     {
-      "id": "synth_ab323015",
+      "id": "synth_d86fd8d2",
       "company": "SynthCorp 71",
       "city": "Sydney",
       "country": "Australia",
@@ -1282,7 +1282,7 @@
       "pct_above_global_avg": -98.6
     },
     {
-      "id": "synth_a1709ae7",
+      "id": "synth_64f4dea2",
       "company": "SynthCorp 72",
       "city": "Stockholm",
       "country": "Sweden",
@@ -1300,7 +1300,7 @@
       "pct_above_global_avg": -81.7
     },
     {
-      "id": "synth_e6e495ea",
+      "id": "synth_c6ee3fb3",
       "company": "SynthCorp 73",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -1318,7 +1318,7 @@
       "pct_above_global_avg": 434.3
     },
     {
-      "id": "synth_d449b45a",
+      "id": "synth_356fe6fa",
       "company": "SynthCorp 74",
       "city": "Toronto",
       "country": "Canada",
@@ -1336,7 +1336,7 @@
       "pct_above_global_avg": -78.2
     },
     {
-      "id": "synth_9578bccb",
+      "id": "synth_9bf8876a",
       "company": "SynthCorp 75",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -1354,7 +1354,7 @@
       "pct_above_global_avg": 406.0
     },
     {
-      "id": "synth_cd4f85ea",
+      "id": "synth_0b1299e1",
       "company": "SynthCorp 76",
       "city": "San Francisco",
       "country": "USA",
@@ -1372,7 +1372,7 @@
       "pct_above_global_avg": 42.4
     },
     {
-      "id": "synth_c69e51d2",
+      "id": "synth_445cd1c0",
       "company": "SynthCorp 77",
       "city": "Beijing",
       "country": "China",
@@ -1390,7 +1390,7 @@
       "pct_above_global_avg": -49.2
     },
     {
-      "id": "synth_0e3e95b0",
+      "id": "synth_76a8ecb3",
       "company": "SynthCorp 78",
       "city": "Singapore",
       "country": "Singapore",
@@ -1408,7 +1408,7 @@
       "pct_above_global_avg": -96.5
     },
     {
-      "id": "synth_1a7543b2",
+      "id": "synth_ce6db6c3",
       "company": "SynthCorp 79",
       "city": "Beijing",
       "country": "China",
@@ -1426,7 +1426,7 @@
       "pct_above_global_avg": -86.7
     },
     {
-      "id": "synth_27ac120f",
+      "id": "synth_26ea0d05",
       "company": "SynthCorp 80",
       "city": "Singapore",
       "country": "Singapore",
@@ -1444,7 +1444,7 @@
       "pct_above_global_avg": -86.0
     },
     {
-      "id": "synth_3d93208d",
+      "id": "synth_77c9b2e9",
       "company": "SynthCorp 81",
       "city": "London",
       "country": "UK",
@@ -1462,7 +1462,7 @@
       "pct_above_global_avg": -98.7
     },
     {
-      "id": "synth_1c2bc67c",
+      "id": "synth_53e759cf",
       "company": "SynthCorp 82",
       "city": "Boston",
       "country": "USA",
@@ -1480,7 +1480,7 @@
       "pct_above_global_avg": 79.2
     },
     {
-      "id": "synth_3bf8106b",
+      "id": "synth_87982597",
       "company": "SynthCorp 83",
       "city": "Shanghai",
       "country": "China",
@@ -1498,7 +1498,7 @@
       "pct_above_global_avg": -87.7
     },
     {
-      "id": "synth_547b90d6",
+      "id": "synth_953a5cf3",
       "company": "SynthCorp 84",
       "city": "Dubai",
       "country": "UAE",
@@ -1516,7 +1516,7 @@
       "pct_above_global_avg": -88.1
     },
     {
-      "id": "synth_72cc0553",
+      "id": "synth_b3c2dbe5",
       "company": "SynthCorp 85",
       "city": "London",
       "country": "UK",
@@ -1534,7 +1534,7 @@
       "pct_above_global_avg": -97.4
     },
     {
-      "id": "synth_52b07b3f",
+      "id": "synth_bc1f7b43",
       "company": "SynthCorp 86",
       "city": "New York",
       "country": "USA",
@@ -1552,7 +1552,7 @@
       "pct_above_global_avg": -59.5
     },
     {
-      "id": "synth_485bdbea",
+      "id": "synth_748f16a7",
       "company": "SynthCorp 87",
       "city": "Boston",
       "country": "USA",
@@ -1570,7 +1570,7 @@
       "pct_above_global_avg": -60.6
     },
     {
-      "id": "synth_2ce0b71b",
+      "id": "synth_5ec28a83",
       "company": "SynthCorp 88",
       "city": "Boston",
       "country": "USA",
@@ -1588,7 +1588,7 @@
       "pct_above_global_avg": -97.2
     },
     {
-      "id": "synth_12642bed",
+      "id": "synth_ee57b8e3",
       "company": "SynthCorp 89",
       "city": "Austin",
       "country": "USA",
@@ -1606,7 +1606,7 @@
       "pct_above_global_avg": -96.0
     },
     {
-      "id": "synth_38ec3dcb",
+      "id": "synth_78adf2b0",
       "company": "SynthCorp 90",
       "city": "San Francisco",
       "country": "USA",
@@ -1624,7 +1624,7 @@
       "pct_above_global_avg": -82.7
     },
     {
-      "id": "synth_4d2136cc",
+      "id": "synth_684c1c2c",
       "company": "SynthCorp 91",
       "city": "Stockholm",
       "country": "Sweden",
@@ -1642,7 +1642,7 @@
       "pct_above_global_avg": -81.2
     },
     {
-      "id": "synth_19f49ae2",
+      "id": "synth_46ed781a",
       "company": "SynthCorp 92",
       "city": "Toronto",
       "country": "Canada",
@@ -1660,7 +1660,7 @@
       "pct_above_global_avg": -97.8
     },
     {
-      "id": "synth_c8c0b81c",
+      "id": "synth_c8596a02",
       "company": "SynthCorp 93",
       "city": "New York",
       "country": "USA",
@@ -1678,7 +1678,7 @@
       "pct_above_global_avg": -21.9
     },
     {
-      "id": "synth_afd1be02",
+      "id": "synth_110bcceb",
       "company": "SynthCorp 94",
       "city": "Paris",
       "country": "France",
@@ -1696,7 +1696,7 @@
       "pct_above_global_avg": -66.9
     },
     {
-      "id": "synth_967e91a2",
+      "id": "synth_335349de",
       "company": "SynthCorp 95",
       "city": "Toronto",
       "country": "Canada",
@@ -1714,7 +1714,7 @@
       "pct_above_global_avg": -62.2
     },
     {
-      "id": "synth_f57cd10b",
+      "id": "synth_359aff0a",
       "company": "SynthCorp 96",
       "city": "Bangalore",
       "country": "India",
@@ -1732,7 +1732,7 @@
       "pct_above_global_avg": -18.6
     },
     {
-      "id": "synth_93425342",
+      "id": "synth_9c1cdb84",
       "company": "SynthCorp 97",
       "city": "New York",
       "country": "USA",
@@ -1750,7 +1750,7 @@
       "pct_above_global_avg": -97.8
     },
     {
-      "id": "synth_7a439a52",
+      "id": "synth_6b2ae772",
       "company": "SynthCorp 98",
       "city": "Shanghai",
       "country": "China",
@@ -1768,7 +1768,7 @@
       "pct_above_global_avg": -93.1
     },
     {
-      "id": "synth_319615d6",
+      "id": "synth_312bfa0c",
       "company": "SynthCorp 99",
       "city": "Dubai",
       "country": "UAE",
@@ -1786,7 +1786,7 @@
       "pct_above_global_avg": -81.1
     },
     {
-      "id": "synth_98ab3fc5",
+      "id": "synth_24fd4441",
       "company": "SynthCorp 100",
       "city": "Singapore",
       "country": "Singapore",
@@ -1804,7 +1804,7 @@
       "pct_above_global_avg": 131.6
     },
     {
-      "id": "synth_83352f67",
+      "id": "synth_52edf809",
       "company": "SynthCorp 101",
       "city": "Boston",
       "country": "USA",
@@ -1822,7 +1822,7 @@
       "pct_above_global_avg": -95.3
     },
     {
-      "id": "synth_609c2bc9",
+      "id": "synth_d60b8f39",
       "company": "SynthCorp 102",
       "city": "Sydney",
       "country": "Australia",
@@ -1840,7 +1840,7 @@
       "pct_above_global_avg": -37.4
     },
     {
-      "id": "synth_b80e6f87",
+      "id": "synth_3fb90528",
       "company": "SynthCorp 103",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -1858,7 +1858,7 @@
       "pct_above_global_avg": 353.5
     },
     {
-      "id": "synth_acb18e00",
+      "id": "synth_3440de8c",
       "company": "SynthCorp 104",
       "city": "Beijing",
       "country": "China",
@@ -1876,7 +1876,7 @@
       "pct_above_global_avg": 67.2
     },
     {
-      "id": "synth_a2469b31",
+      "id": "synth_16062c00",
       "company": "SynthCorp 105",
       "city": "Beijing",
       "country": "China",
@@ -1894,7 +1894,7 @@
       "pct_above_global_avg": -99.6
     },
     {
-      "id": "synth_051ac8a2",
+      "id": "synth_aca40910",
       "company": "SynthCorp 106",
       "city": "Shanghai",
       "country": "China",
@@ -1912,7 +1912,7 @@
       "pct_above_global_avg": -25.1
     },
     {
-      "id": "synth_e185655e",
+      "id": "synth_27390583",
       "company": "SynthCorp 107",
       "city": "London",
       "country": "UK",
@@ -1930,7 +1930,7 @@
       "pct_above_global_avg": -83.7
     },
     {
-      "id": "synth_4fdb9a1d",
+      "id": "synth_22a12070",
       "company": "SynthCorp 108",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -1948,7 +1948,7 @@
       "pct_above_global_avg": -58.3
     },
     {
-      "id": "synth_f556e3b5",
+      "id": "synth_0d61d7fc",
       "company": "SynthCorp 109",
       "city": "Dubai",
       "country": "UAE",
@@ -1966,7 +1966,7 @@
       "pct_above_global_avg": -92.7
     },
     {
-      "id": "synth_80312898",
+      "id": "synth_98b40b85",
       "company": "SynthCorp 110",
       "city": "Bangalore",
       "country": "India",
@@ -1984,7 +1984,7 @@
       "pct_above_global_avg": 483.7
     },
     {
-      "id": "synth_608145d2",
+      "id": "synth_e76d4471",
       "company": "SynthCorp 111",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -2002,7 +2002,7 @@
       "pct_above_global_avg": 121.0
     },
     {
-      "id": "synth_8b9eb1eb",
+      "id": "synth_978f518f",
       "company": "SynthCorp 112",
       "city": "Austin",
       "country": "USA",
@@ -2020,7 +2020,7 @@
       "pct_above_global_avg": 310.1
     },
     {
-      "id": "synth_9efde9be",
+      "id": "synth_77696e2f",
       "company": "SynthCorp 113",
       "city": "Seattle",
       "country": "USA",
@@ -2038,7 +2038,7 @@
       "pct_above_global_avg": -95.7
     },
     {
-      "id": "synth_e2e08b70",
+      "id": "synth_8acf3ecd",
       "company": "SynthCorp 114",
       "city": "Berlin",
       "country": "Germany",
@@ -2056,7 +2056,7 @@
       "pct_above_global_avg": -95.6
     },
     {
-      "id": "synth_4ee575b5",
+      "id": "synth_7f4169d6",
       "company": "SynthCorp 115",
       "city": "London",
       "country": "UK",
@@ -2074,7 +2074,7 @@
       "pct_above_global_avg": -79.6
     },
     {
-      "id": "synth_7f2fe51f",
+      "id": "synth_dc726da0",
       "company": "SynthCorp 116",
       "city": "Beijing",
       "country": "China",
@@ -2092,7 +2092,7 @@
       "pct_above_global_avg": -96.7
     },
     {
-      "id": "synth_52807510",
+      "id": "synth_02689936",
       "company": "SynthCorp 117",
       "city": "Singapore",
       "country": "Singapore",
@@ -2110,7 +2110,7 @@
       "pct_above_global_avg": -96.1
     },
     {
-      "id": "synth_010550d6",
+      "id": "synth_be00e528",
       "company": "SynthCorp 118",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -2128,7 +2128,7 @@
       "pct_above_global_avg": -97.5
     },
     {
-      "id": "synth_277f97b3",
+      "id": "synth_f7b65f67",
       "company": "SynthCorp 119",
       "city": "Shanghai",
       "country": "China",
@@ -2146,7 +2146,7 @@
       "pct_above_global_avg": -87.4
     },
     {
-      "id": "synth_b6c4b10f",
+      "id": "synth_25995b9b",
       "company": "SynthCorp 120",
       "city": "Paris",
       "country": "France",
@@ -2164,7 +2164,7 @@
       "pct_above_global_avg": 347.8
     },
     {
-      "id": "synth_71fab34b",
+      "id": "synth_55bab25b",
       "company": "SynthCorp 121",
       "city": "Austin",
       "country": "USA",
@@ -2182,7 +2182,7 @@
       "pct_above_global_avg": -73.3
     },
     {
-      "id": "synth_5c6070f5",
+      "id": "synth_837e7a80",
       "company": "SynthCorp 122",
       "city": "Stockholm",
       "country": "Sweden",
@@ -2200,7 +2200,7 @@
       "pct_above_global_avg": -99.3
     },
     {
-      "id": "synth_1db0bc67",
+      "id": "synth_cc6bc1d6",
       "company": "SynthCorp 123",
       "city": "Paris",
       "country": "France",
@@ -2218,7 +2218,7 @@
       "pct_above_global_avg": -95.0
     },
     {
-      "id": "synth_408c2377",
+      "id": "synth_126471ca",
       "company": "SynthCorp 124",
       "city": "Tokyo",
       "country": "Japan",
@@ -2236,7 +2236,7 @@
       "pct_above_global_avg": 268.8
     },
     {
-      "id": "synth_83737c3b",
+      "id": "synth_237c55d8",
       "company": "SynthCorp 125",
       "city": "Sydney",
       "country": "Australia",
@@ -2254,7 +2254,7 @@
       "pct_above_global_avg": -93.4
     },
     {
-      "id": "synth_e4e88b80",
+      "id": "synth_57344843",
       "company": "SynthCorp 126",
       "city": "Toronto",
       "country": "Canada",
@@ -2272,7 +2272,7 @@
       "pct_above_global_avg": -98.4
     },
     {
-      "id": "synth_f1eada9e",
+      "id": "synth_81a62db9",
       "company": "SynthCorp 127",
       "city": "Berlin",
       "country": "Germany",
@@ -2290,7 +2290,7 @@
       "pct_above_global_avg": -78.3
     },
     {
-      "id": "synth_c789f23d",
+      "id": "synth_343db118",
       "company": "SynthCorp 128",
       "city": "London",
       "country": "UK",
@@ -2308,7 +2308,7 @@
       "pct_above_global_avg": -97.9
     },
     {
-      "id": "synth_e109328c",
+      "id": "synth_4c3c63f6",
       "company": "SynthCorp 129",
       "city": "New York",
       "country": "USA",
@@ -2326,7 +2326,7 @@
       "pct_above_global_avg": 275.3
     },
     {
-      "id": "synth_ed65ad4a",
+      "id": "synth_edc405a1",
       "company": "SynthCorp 130",
       "city": "Berlin",
       "country": "Germany",
@@ -2344,7 +2344,7 @@
       "pct_above_global_avg": 564.5
     },
     {
-      "id": "synth_f6eea14b",
+      "id": "synth_dd72afc3",
       "company": "SynthCorp 131",
       "city": "New York",
       "country": "USA",
@@ -2362,7 +2362,7 @@
       "pct_above_global_avg": -97.7
     },
     {
-      "id": "synth_384eb82a",
+      "id": "synth_d2ce313f",
       "company": "SynthCorp 132",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -2380,7 +2380,7 @@
       "pct_above_global_avg": -97.3
     },
     {
-      "id": "synth_2ac62c81",
+      "id": "synth_72cea643",
       "company": "SynthCorp 133",
       "city": "Berlin",
       "country": "Germany",
@@ -2398,7 +2398,7 @@
       "pct_above_global_avg": -94.2
     },
     {
-      "id": "synth_eeef6843",
+      "id": "synth_9a88ab1f",
       "company": "SynthCorp 134",
       "city": "Stockholm",
       "country": "Sweden",
@@ -2416,7 +2416,7 @@
       "pct_above_global_avg": -95.7
     },
     {
-      "id": "synth_e21806f0",
+      "id": "synth_286e2e35",
       "company": "SynthCorp 135",
       "city": "London",
       "country": "UK",
@@ -2434,7 +2434,7 @@
       "pct_above_global_avg": 164.7
     },
     {
-      "id": "synth_34fccade",
+      "id": "synth_e79a7856",
       "company": "SynthCorp 136",
       "city": "Beijing",
       "country": "China",
@@ -2452,7 +2452,7 @@
       "pct_above_global_avg": -92.1
     },
     {
-      "id": "synth_6ef27d29",
+      "id": "synth_36df473a",
       "company": "SynthCorp 137",
       "city": "Shanghai",
       "country": "China",
@@ -2470,7 +2470,7 @@
       "pct_above_global_avg": -94.0
     },
     {
-      "id": "synth_f0812c65",
+      "id": "synth_b2128d74",
       "company": "SynthCorp 138",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -2488,7 +2488,7 @@
       "pct_above_global_avg": -96.0
     },
     {
-      "id": "synth_27a251aa",
+      "id": "synth_ee8844c7",
       "company": "SynthCorp 139",
       "city": "Austin",
       "country": "USA",
@@ -2506,7 +2506,7 @@
       "pct_above_global_avg": -96.7
     },
     {
-      "id": "synth_3c47f898",
+      "id": "synth_662f9ba6",
       "company": "SynthCorp 140",
       "city": "Tokyo",
       "country": "Japan",
@@ -2524,7 +2524,7 @@
       "pct_above_global_avg": -92.6
     },
     {
-      "id": "synth_f8355e7b",
+      "id": "synth_3f9f0b12",
       "company": "SynthCorp 141",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -2542,7 +2542,7 @@
       "pct_above_global_avg": -82.3
     },
     {
-      "id": "synth_4ba928fa",
+      "id": "synth_2f92dc7e",
       "company": "SynthCorp 142",
       "city": "Bangalore",
       "country": "India",
@@ -2560,7 +2560,7 @@
       "pct_above_global_avg": -97.0
     },
     {
-      "id": "synth_f8de09fa",
+      "id": "synth_a9525d00",
       "company": "SynthCorp 143",
       "city": "Bangalore",
       "country": "India",
@@ -2578,7 +2578,7 @@
       "pct_above_global_avg": -68.9
     },
     {
-      "id": "synth_99c20906",
+      "id": "synth_585f84b3",
       "company": "SynthCorp 144",
       "city": "New York",
       "country": "USA",
@@ -2596,7 +2596,7 @@
       "pct_above_global_avg": 45.6
     },
     {
-      "id": "synth_9757c179",
+      "id": "synth_ab7f1e12",
       "company": "SynthCorp 145",
       "city": "New York",
       "country": "USA",
@@ -2614,7 +2614,7 @@
       "pct_above_global_avg": -91.4
     },
     {
-      "id": "synth_23eb2625",
+      "id": "synth_96b62a73",
       "company": "SynthCorp 146",
       "city": "Boston",
       "country": "USA",
@@ -2632,7 +2632,7 @@
       "pct_above_global_avg": -96.7
     },
     {
-      "id": "synth_c1c0af32",
+      "id": "synth_dc96f78c",
       "company": "SynthCorp 147",
       "city": "Stockholm",
       "country": "Sweden",
@@ -2650,7 +2650,7 @@
       "pct_above_global_avg": -52.9
     },
     {
-      "id": "synth_4a91fbde",
+      "id": "synth_4a484cd7",
       "company": "SynthCorp 148",
       "city": "London",
       "country": "UK",
@@ -2668,7 +2668,7 @@
       "pct_above_global_avg": -30.0
     },
     {
-      "id": "synth_a68e8c0e",
+      "id": "synth_01e71f56",
       "company": "SynthCorp 149",
       "city": "Singapore",
       "country": "Singapore",
@@ -2686,7 +2686,7 @@
       "pct_above_global_avg": -82.4
     },
     {
-      "id": "synth_92dc6f5b",
+      "id": "synth_9e3fd8a3",
       "company": "SynthCorp 150",
       "city": "Bangalore",
       "country": "India",
@@ -2704,7 +2704,7 @@
       "pct_above_global_avg": -95.3
     },
     {
-      "id": "synth_5879bbdd",
+      "id": "synth_92436c48",
       "company": "SynthCorp 151",
       "city": "New York",
       "country": "USA",
@@ -2722,7 +2722,7 @@
       "pct_above_global_avg": 28.6
     },
     {
-      "id": "synth_8c8b948d",
+      "id": "synth_98427f2a",
       "company": "SynthCorp 152",
       "city": "Beijing",
       "country": "China",
@@ -2740,7 +2740,7 @@
       "pct_above_global_avg": -32.4
     },
     {
-      "id": "synth_47844c6f",
+      "id": "synth_27b5c2a7",
       "company": "SynthCorp 153",
       "city": "Seattle",
       "country": "USA",
@@ -2758,7 +2758,7 @@
       "pct_above_global_avg": -98.9
     },
     {
-      "id": "synth_edb04d8c",
+      "id": "synth_ed3b34e9",
       "company": "SynthCorp 154",
       "city": "Beijing",
       "country": "China",
@@ -2776,7 +2776,7 @@
       "pct_above_global_avg": -92.8
     },
     {
-      "id": "synth_46fc7b98",
+      "id": "synth_f3c0153c",
       "company": "SynthCorp 155",
       "city": "Seattle",
       "country": "USA",
@@ -2794,7 +2794,7 @@
       "pct_above_global_avg": -49.5
     },
     {
-      "id": "synth_fcd3da26",
+      "id": "synth_a7f8e65d",
       "company": "SynthCorp 156",
       "city": "Bangalore",
       "country": "India",
@@ -2812,7 +2812,7 @@
       "pct_above_global_avg": -97.4
     },
     {
-      "id": "synth_6b28b620",
+      "id": "synth_10832454",
       "company": "SynthCorp 157",
       "city": "New York",
       "country": "USA",
@@ -2830,7 +2830,7 @@
       "pct_above_global_avg": -98.7
     },
     {
-      "id": "synth_7d870ade",
+      "id": "synth_946cb75e",
       "company": "SynthCorp 158",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -2848,7 +2848,7 @@
       "pct_above_global_avg": -99.2
     },
     {
-      "id": "synth_87771a75",
+      "id": "synth_a8fc0e3c",
       "company": "SynthCorp 159",
       "city": "Shanghai",
       "country": "China",
@@ -2866,7 +2866,7 @@
       "pct_above_global_avg": -84.0
     },
     {
-      "id": "synth_dda24f5b",
+      "id": "synth_33edfadc",
       "company": "SynthCorp 160",
       "city": "Paris",
       "country": "France",
@@ -2884,7 +2884,7 @@
       "pct_above_global_avg": 181.5
     },
     {
-      "id": "synth_e561fcf6",
+      "id": "synth_ddbc1ff5",
       "company": "SynthCorp 161",
       "city": "Boston",
       "country": "USA",
@@ -2902,7 +2902,7 @@
       "pct_above_global_avg": -4.4
     },
     {
-      "id": "synth_95743f22",
+      "id": "synth_f64f5b50",
       "company": "SynthCorp 162",
       "city": "Tokyo",
       "country": "Japan",
@@ -2920,7 +2920,7 @@
       "pct_above_global_avg": -58.6
     },
     {
-      "id": "synth_ceb68384",
+      "id": "synth_7a47f54d",
       "company": "SynthCorp 163",
       "city": "San Francisco",
       "country": "USA",
@@ -2938,7 +2938,7 @@
       "pct_above_global_avg": -88.4
     },
     {
-      "id": "synth_8c0c4cb6",
+      "id": "synth_b7bd51d7",
       "company": "SynthCorp 164",
       "city": "San Francisco",
       "country": "USA",
@@ -2956,7 +2956,7 @@
       "pct_above_global_avg": -85.4
     },
     {
-      "id": "synth_4f95ef8b",
+      "id": "synth_13a6d6c5",
       "company": "SynthCorp 165",
       "city": "Boston",
       "country": "USA",
@@ -2974,7 +2974,7 @@
       "pct_above_global_avg": -98.3
     },
     {
-      "id": "synth_c6bd59cf",
+      "id": "synth_239cff15",
       "company": "SynthCorp 166",
       "city": "Boston",
       "country": "USA",
@@ -2992,7 +2992,7 @@
       "pct_above_global_avg": -54.6
     },
     {
-      "id": "synth_9e6727cb",
+      "id": "synth_a7c159c0",
       "company": "SynthCorp 167",
       "city": "San Francisco",
       "country": "USA",
@@ -3010,7 +3010,7 @@
       "pct_above_global_avg": -40.4
     },
     {
-      "id": "synth_57cdfc3a",
+      "id": "synth_ed003d43",
       "company": "SynthCorp 168",
       "city": "Tokyo",
       "country": "Japan",
@@ -3028,7 +3028,7 @@
       "pct_above_global_avg": -88.1
     },
     {
-      "id": "synth_8fbe7119",
+      "id": "synth_dcc7332d",
       "company": "SynthCorp 169",
       "city": "Shanghai",
       "country": "China",
@@ -3046,7 +3046,7 @@
       "pct_above_global_avg": -71.5
     },
     {
-      "id": "synth_519bf58c",
+      "id": "synth_06c7e9fd",
       "company": "SynthCorp 170",
       "city": "Shanghai",
       "country": "China",
@@ -3064,7 +3064,7 @@
       "pct_above_global_avg": -46.0
     },
     {
-      "id": "synth_3f416625",
+      "id": "synth_7d6352f3",
       "company": "SynthCorp 171",
       "city": "Singapore",
       "country": "Singapore",
@@ -3082,7 +3082,7 @@
       "pct_above_global_avg": -66.6
     },
     {
-      "id": "synth_33f6fd63",
+      "id": "synth_97513c56",
       "company": "SynthCorp 172",
       "city": "Shanghai",
       "country": "China",
@@ -3100,7 +3100,7 @@
       "pct_above_global_avg": -95.1
     },
     {
-      "id": "synth_78dd9ea8",
+      "id": "synth_7c6b610a",
       "company": "SynthCorp 173",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -3118,7 +3118,7 @@
       "pct_above_global_avg": -97.0
     },
     {
-      "id": "synth_0948ca3d",
+      "id": "synth_c6dbfc48",
       "company": "SynthCorp 174",
       "city": "Shanghai",
       "country": "China",
@@ -3136,7 +3136,7 @@
       "pct_above_global_avg": -72.5
     },
     {
-      "id": "synth_9e212d17",
+      "id": "synth_4e66260b",
       "company": "SynthCorp 175",
       "city": "Stockholm",
       "country": "Sweden",
@@ -3154,7 +3154,7 @@
       "pct_above_global_avg": 260.8
     },
     {
-      "id": "synth_ec4a9478",
+      "id": "synth_8e207b62",
       "company": "SynthCorp 176",
       "city": "Beijing",
       "country": "China",
@@ -3172,7 +3172,7 @@
       "pct_above_global_avg": 64.6
     },
     {
-      "id": "synth_061afdd1",
+      "id": "synth_d73313af",
       "company": "SynthCorp 177",
       "city": "Berlin",
       "country": "Germany",
@@ -3190,7 +3190,7 @@
       "pct_above_global_avg": 541.7
     },
     {
-      "id": "synth_ff4a4379",
+      "id": "synth_e3e251c2",
       "company": "SynthCorp 178",
       "city": "Toronto",
       "country": "Canada",
@@ -3208,7 +3208,7 @@
       "pct_above_global_avg": 58.4
     },
     {
-      "id": "synth_ef34926e",
+      "id": "synth_1ebb054b",
       "company": "SynthCorp 179",
       "city": "Singapore",
       "country": "Singapore",
@@ -3226,7 +3226,7 @@
       "pct_above_global_avg": -94.7
     },
     {
-      "id": "synth_c2e01ac8",
+      "id": "synth_ce57f089",
       "company": "SynthCorp 180",
       "city": "New York",
       "country": "USA",
@@ -3244,7 +3244,7 @@
       "pct_above_global_avg": -85.5
     },
     {
-      "id": "synth_4ae3dd58",
+      "id": "synth_c07ac413",
       "company": "SynthCorp 181",
       "city": "San Francisco",
       "country": "USA",
@@ -3262,7 +3262,7 @@
       "pct_above_global_avg": -58.7
     },
     {
-      "id": "synth_304ee62e",
+      "id": "synth_b047ae3c",
       "company": "SynthCorp 182",
       "city": "Austin",
       "country": "USA",
@@ -3280,7 +3280,7 @@
       "pct_above_global_avg": 49.6
     },
     {
-      "id": "synth_e1568ed9",
+      "id": "synth_36a60f44",
       "company": "SynthCorp 183",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -3298,7 +3298,7 @@
       "pct_above_global_avg": -49.2
     },
     {
-      "id": "synth_c41f92f5",
+      "id": "synth_a5f91b8c",
       "company": "SynthCorp 184",
       "city": "Sydney",
       "country": "Australia",
@@ -3316,7 +3316,7 @@
       "pct_above_global_avg": -61.7
     },
     {
-      "id": "synth_5ac66673",
+      "id": "synth_788698e0",
       "company": "SynthCorp 185",
       "city": "San Francisco",
       "country": "USA",
@@ -3334,7 +3334,7 @@
       "pct_above_global_avg": -85.5
     },
     {
-      "id": "synth_f4b17774",
+      "id": "synth_c891c8f9",
       "company": "SynthCorp 186",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -3352,7 +3352,7 @@
       "pct_above_global_avg": -97.8
     },
     {
-      "id": "synth_f9c7af1b",
+      "id": "synth_e63e6ad2",
       "company": "SynthCorp 187",
       "city": "Boston",
       "country": "USA",
@@ -3370,7 +3370,7 @@
       "pct_above_global_avg": -97.2
     },
     {
-      "id": "synth_b7344f1c",
+      "id": "synth_25a4a727",
       "company": "SynthCorp 188",
       "city": "Dubai",
       "country": "UAE",
@@ -3388,7 +3388,7 @@
       "pct_above_global_avg": -97.8
     },
     {
-      "id": "synth_10073619",
+      "id": "synth_ac31b2b1",
       "company": "SynthCorp 189",
       "city": "Stockholm",
       "country": "Sweden",
@@ -3406,7 +3406,7 @@
       "pct_above_global_avg": -87.8
     },
     {
-      "id": "synth_a0a2f174",
+      "id": "synth_4341c24a",
       "company": "SynthCorp 190",
       "city": "London",
       "country": "UK",
@@ -3424,7 +3424,7 @@
       "pct_above_global_avg": 42.0
     },
     {
-      "id": "synth_196b358e",
+      "id": "synth_e8fdb409",
       "company": "SynthCorp 191",
       "city": "San Francisco",
       "country": "USA",
@@ -3442,7 +3442,7 @@
       "pct_above_global_avg": -24.6
     },
     {
-      "id": "synth_91e06775",
+      "id": "synth_8b6041fc",
       "company": "SynthCorp 192",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -3460,7 +3460,7 @@
       "pct_above_global_avg": -13.6
     },
     {
-      "id": "synth_e9cd211a",
+      "id": "synth_76445253",
       "company": "SynthCorp 193",
       "city": "Shanghai",
       "country": "China",
@@ -3478,7 +3478,7 @@
       "pct_above_global_avg": 37.7
     },
     {
-      "id": "synth_ab7d3a3e",
+      "id": "synth_61d3a877",
       "company": "SynthCorp 194",
       "city": "Bangalore",
       "country": "India",
@@ -3496,7 +3496,7 @@
       "pct_above_global_avg": 163.1
     },
     {
-      "id": "synth_f68f14cf",
+      "id": "synth_a92ecfef",
       "company": "SynthCorp 195",
       "city": "Tokyo",
       "country": "Japan",
@@ -3514,7 +3514,7 @@
       "pct_above_global_avg": -55.4
     },
     {
-      "id": "synth_122ce062",
+      "id": "synth_cbe7990d",
       "company": "SynthCorp 196",
       "city": "Beijing",
       "country": "China",
@@ -3532,7 +3532,7 @@
       "pct_above_global_avg": -94.3
     },
     {
-      "id": "synth_34f05c12",
+      "id": "synth_cec58501",
       "company": "SynthCorp 197",
       "city": "Seattle",
       "country": "USA",
@@ -3550,7 +3550,7 @@
       "pct_above_global_avg": -76.9
     },
     {
-      "id": "synth_5ad0791a",
+      "id": "synth_35488dd9",
       "company": "SynthCorp 198",
       "city": "Seattle",
       "country": "USA",
@@ -3568,7 +3568,7 @@
       "pct_above_global_avg": -90.7
     },
     {
-      "id": "synth_6a1ee24e",
+      "id": "synth_2a28f9c6",
       "company": "SynthCorp 199",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -3586,7 +3586,7 @@
       "pct_above_global_avg": -70.1
     },
     {
-      "id": "synth_50d70987",
+      "id": "synth_8912ce9c",
       "company": "SynthCorp 200",
       "city": "San Francisco",
       "country": "USA",
@@ -3604,7 +3604,7 @@
       "pct_above_global_avg": -97.7
     },
     {
-      "id": "synth_5f0a4a29",
+      "id": "synth_fc18dc38",
       "company": "SynthCorp 201",
       "city": "New York",
       "country": "USA",
@@ -3622,7 +3622,7 @@
       "pct_above_global_avg": -88.7
     },
     {
-      "id": "synth_29749393",
+      "id": "synth_27b29a87",
       "company": "SynthCorp 202",
       "city": "New York",
       "country": "USA",
@@ -3640,7 +3640,7 @@
       "pct_above_global_avg": 15.8
     },
     {
-      "id": "synth_1f98aa3b",
+      "id": "synth_2a739369",
       "company": "SynthCorp 203",
       "city": "New York",
       "country": "USA",
@@ -3658,7 +3658,7 @@
       "pct_above_global_avg": -45.9
     },
     {
-      "id": "synth_dd3a061c",
+      "id": "synth_c7e9b45d",
       "company": "SynthCorp 204",
       "city": "Shanghai",
       "country": "China",
@@ -3676,7 +3676,7 @@
       "pct_above_global_avg": -98.2
     },
     {
-      "id": "synth_e1f8f836",
+      "id": "synth_b2adc4b0",
       "company": "SynthCorp 205",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -3694,7 +3694,7 @@
       "pct_above_global_avg": -96.0
     },
     {
-      "id": "synth_3766f104",
+      "id": "synth_fc084ea6",
       "company": "SynthCorp 206",
       "city": "Toronto",
       "country": "Canada",
@@ -3712,7 +3712,7 @@
       "pct_above_global_avg": -59.8
     },
     {
-      "id": "synth_bab58693",
+      "id": "synth_5e550d88",
       "company": "SynthCorp 207",
       "city": "Berlin",
       "country": "Germany",
@@ -3730,7 +3730,7 @@
       "pct_above_global_avg": -89.4
     },
     {
-      "id": "synth_cca4e3ed",
+      "id": "synth_3cc1b38d",
       "company": "SynthCorp 208",
       "city": "Dubai",
       "country": "UAE",
@@ -3748,7 +3748,7 @@
       "pct_above_global_avg": -26.7
     },
     {
-      "id": "synth_05ef1310",
+      "id": "synth_1148c8ad",
       "company": "SynthCorp 209",
       "city": "Singapore",
       "country": "Singapore",
@@ -3766,7 +3766,7 @@
       "pct_above_global_avg": -80.7
     },
     {
-      "id": "synth_f16a8946",
+      "id": "synth_007dd1c9",
       "company": "SynthCorp 210",
       "city": "Beijing",
       "country": "China",
@@ -3784,7 +3784,7 @@
       "pct_above_global_avg": -33.9
     },
     {
-      "id": "synth_f7a6744f",
+      "id": "synth_27a702ce",
       "company": "SynthCorp 211",
       "city": "Austin",
       "country": "USA",
@@ -3802,7 +3802,7 @@
       "pct_above_global_avg": -70.9
     },
     {
-      "id": "synth_66308f12",
+      "id": "synth_2e832baa",
       "company": "SynthCorp 212",
       "city": "San Francisco",
       "country": "USA",
@@ -3820,7 +3820,7 @@
       "pct_above_global_avg": -78.9
     },
     {
-      "id": "synth_34043853",
+      "id": "synth_ba966c3d",
       "company": "SynthCorp 213",
       "city": "Austin",
       "country": "USA",
@@ -3838,7 +3838,7 @@
       "pct_above_global_avg": -90.0
     },
     {
-      "id": "synth_b44d6393",
+      "id": "synth_af19db3f",
       "company": "SynthCorp 214",
       "city": "Bangalore",
       "country": "India",
@@ -3856,7 +3856,7 @@
       "pct_above_global_avg": 19.8
     },
     {
-      "id": "synth_ba60c018",
+      "id": "synth_10991924",
       "company": "SynthCorp 215",
       "city": "Boston",
       "country": "USA",
@@ -3874,7 +3874,7 @@
       "pct_above_global_avg": -88.7
     },
     {
-      "id": "synth_5a911787",
+      "id": "synth_b804152d",
       "company": "SynthCorp 216",
       "city": "Singapore",
       "country": "Singapore",
@@ -3892,7 +3892,7 @@
       "pct_above_global_avg": -87.4
     },
     {
-      "id": "synth_dc9bfeb5",
+      "id": "synth_1fc9175a",
       "company": "SynthCorp 217",
       "city": "San Francisco",
       "country": "USA",
@@ -3910,7 +3910,7 @@
       "pct_above_global_avg": 466.4
     },
     {
-      "id": "synth_f262356a",
+      "id": "synth_ea80681e",
       "company": "SynthCorp 218",
       "city": "Stockholm",
       "country": "Sweden",
@@ -3928,7 +3928,7 @@
       "pct_above_global_avg": -98.2
     },
     {
-      "id": "synth_7f5bf67c",
+      "id": "synth_6c744982",
       "company": "SynthCorp 219",
       "city": "San Francisco",
       "country": "USA",
@@ -3946,7 +3946,7 @@
       "pct_above_global_avg": -90.7
     },
     {
-      "id": "synth_b5f22b3b",
+      "id": "synth_e5ec281c",
       "company": "SynthCorp 220",
       "city": "Singapore",
       "country": "Singapore",
@@ -3964,7 +3964,7 @@
       "pct_above_global_avg": 225.5
     },
     {
-      "id": "synth_bac6e4b4",
+      "id": "synth_9bbc89de",
       "company": "SynthCorp 221",
       "city": "Berlin",
       "country": "Germany",
@@ -3982,7 +3982,7 @@
       "pct_above_global_avg": -90.1
     },
     {
-      "id": "synth_12ebe15e",
+      "id": "synth_17aa1450",
       "company": "SynthCorp 222",
       "city": "Seattle",
       "country": "USA",
@@ -4000,7 +4000,7 @@
       "pct_above_global_avg": -95.5
     },
     {
-      "id": "synth_24c9cf9f",
+      "id": "synth_6ff015de",
       "company": "SynthCorp 223",
       "city": "Sydney",
       "country": "Australia",
@@ -4018,7 +4018,7 @@
       "pct_above_global_avg": 27.8
     },
     {
-      "id": "synth_cbd493bd",
+      "id": "synth_49ae719a",
       "company": "SynthCorp 224",
       "city": "Singapore",
       "country": "Singapore",
@@ -4036,7 +4036,7 @@
       "pct_above_global_avg": -96.2
     },
     {
-      "id": "synth_bbaf0c89",
+      "id": "synth_e953bf45",
       "company": "SynthCorp 225",
       "city": "Berlin",
       "country": "Germany",
@@ -4054,7 +4054,7 @@
       "pct_above_global_avg": -52.0
     },
     {
-      "id": "synth_605679c4",
+      "id": "synth_0268d5b3",
       "company": "SynthCorp 226",
       "city": "Toronto",
       "country": "Canada",
@@ -4072,7 +4072,7 @@
       "pct_above_global_avg": -92.7
     },
     {
-      "id": "synth_f77900b1",
+      "id": "synth_b33fc946",
       "company": "SynthCorp 227",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -4090,7 +4090,7 @@
       "pct_above_global_avg": 407.8
     },
     {
-      "id": "synth_b7a0429f",
+      "id": "synth_68e8615c",
       "company": "SynthCorp 228",
       "city": "Austin",
       "country": "USA",
@@ -4108,7 +4108,7 @@
       "pct_above_global_avg": -82.3
     },
     {
-      "id": "synth_ca9e05dd",
+      "id": "synth_e54e7f5f",
       "company": "SynthCorp 229",
       "city": "Sydney",
       "country": "Australia",
@@ -4126,7 +4126,7 @@
       "pct_above_global_avg": -95.0
     },
     {
-      "id": "synth_3708ee9b",
+      "id": "synth_cb236859",
       "company": "SynthCorp 230",
       "city": "Paris",
       "country": "France",
@@ -4144,7 +4144,7 @@
       "pct_above_global_avg": 26.8
     },
     {
-      "id": "synth_44b3268f",
+      "id": "synth_96d49839",
       "company": "SynthCorp 231",
       "city": "Berlin",
       "country": "Germany",
@@ -4162,7 +4162,7 @@
       "pct_above_global_avg": 132.2
     },
     {
-      "id": "synth_0503607f",
+      "id": "synth_ece4bbfc",
       "company": "SynthCorp 232",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -4180,7 +4180,7 @@
       "pct_above_global_avg": 25.1
     },
     {
-      "id": "synth_401ebb4a",
+      "id": "synth_b62537fb",
       "company": "SynthCorp 233",
       "city": "Seattle",
       "country": "USA",
@@ -4198,7 +4198,7 @@
       "pct_above_global_avg": -39.6
     },
     {
-      "id": "synth_df1410b7",
+      "id": "synth_47a85ee3",
       "company": "SynthCorp 234",
       "city": "Toronto",
       "country": "Canada",
@@ -4216,7 +4216,7 @@
       "pct_above_global_avg": 570.3
     },
     {
-      "id": "synth_10761cde",
+      "id": "synth_4439e2af",
       "company": "SynthCorp 235",
       "city": "Tokyo",
       "country": "Japan",
@@ -4234,7 +4234,7 @@
       "pct_above_global_avg": -63.1
     },
     {
-      "id": "synth_e286f713",
+      "id": "synth_9c69d15d",
       "company": "SynthCorp 236",
       "city": "Boston",
       "country": "USA",
@@ -4252,7 +4252,7 @@
       "pct_above_global_avg": -72.3
     },
     {
-      "id": "synth_9de7259f",
+      "id": "synth_0ea41546",
       "company": "SynthCorp 237",
       "city": "London",
       "country": "UK",
@@ -4270,7 +4270,7 @@
       "pct_above_global_avg": -97.1
     },
     {
-      "id": "synth_2eec3ace",
+      "id": "synth_9470eca4",
       "company": "SynthCorp 238",
       "city": "Austin",
       "country": "USA",
@@ -4288,7 +4288,7 @@
       "pct_above_global_avg": 352.0
     },
     {
-      "id": "synth_fb3eb3d4",
+      "id": "synth_1c0abf91",
       "company": "SynthCorp 239",
       "city": "Beijing",
       "country": "China",
@@ -4306,7 +4306,7 @@
       "pct_above_global_avg": -98.0
     },
     {
-      "id": "synth_0c921a2d",
+      "id": "synth_ba5d392f",
       "company": "SynthCorp 240",
       "city": "Bangalore",
       "country": "India",
@@ -4324,7 +4324,7 @@
       "pct_above_global_avg": 154.8
     },
     {
-      "id": "synth_ac621324",
+      "id": "synth_6963820b",
       "company": "SynthCorp 241",
       "city": "Sydney",
       "country": "Australia",
@@ -4342,7 +4342,7 @@
       "pct_above_global_avg": 670.0
     },
     {
-      "id": "synth_00827fd0",
+      "id": "synth_9cfa4bb3",
       "company": "SynthCorp 242",
       "city": "Bangalore",
       "country": "India",
@@ -4360,7 +4360,7 @@
       "pct_above_global_avg": -43.7
     },
     {
-      "id": "synth_02b60697",
+      "id": "synth_06043264",
       "company": "SynthCorp 243",
       "city": "London",
       "country": "UK",
@@ -4378,7 +4378,7 @@
       "pct_above_global_avg": -95.4
     },
     {
-      "id": "synth_01dcb209",
+      "id": "synth_705c4e89",
       "company": "SynthCorp 244",
       "city": "Singapore",
       "country": "Singapore",
@@ -4396,7 +4396,7 @@
       "pct_above_global_avg": 3.8
     },
     {
-      "id": "synth_eb57c172",
+      "id": "synth_e93dc949",
       "company": "SynthCorp 245",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -4414,7 +4414,7 @@
       "pct_above_global_avg": -96.7
     },
     {
-      "id": "synth_5b69a1cb",
+      "id": "synth_2bb54fe0",
       "company": "SynthCorp 246",
       "city": "Berlin",
       "country": "Germany",
@@ -4432,7 +4432,7 @@
       "pct_above_global_avg": -85.3
     },
     {
-      "id": "synth_f8b3a345",
+      "id": "synth_b4a90666",
       "company": "SynthCorp 247",
       "city": "Austin",
       "country": "USA",
@@ -4450,7 +4450,7 @@
       "pct_above_global_avg": 31.8
     },
     {
-      "id": "synth_525c92f1",
+      "id": "synth_f3a20667",
       "company": "SynthCorp 248",
       "city": "New York",
       "country": "USA",
@@ -4468,7 +4468,7 @@
       "pct_above_global_avg": 573.0
     },
     {
-      "id": "synth_7faaa78c",
+      "id": "synth_440ed795",
       "company": "SynthCorp 249",
       "city": "New York",
       "country": "USA",
@@ -4486,7 +4486,7 @@
       "pct_above_global_avg": -25.1
     },
     {
-      "id": "synth_2f1b183e",
+      "id": "synth_27219040",
       "company": "SynthCorp 250",
       "city": "Seattle",
       "country": "USA",
@@ -4504,7 +4504,7 @@
       "pct_above_global_avg": -89.6
     },
     {
-      "id": "synth_b5c5b473",
+      "id": "synth_f694ea61",
       "company": "SynthCorp 251",
       "city": "Tokyo",
       "country": "Japan",
@@ -4522,7 +4522,7 @@
       "pct_above_global_avg": -94.8
     },
     {
-      "id": "synth_220d529f",
+      "id": "synth_81946c83",
       "company": "SynthCorp 252",
       "city": "Bangalore",
       "country": "India",
@@ -4540,7 +4540,7 @@
       "pct_above_global_avg": -0.0
     },
     {
-      "id": "synth_2f180240",
+      "id": "synth_9c1a1cbb",
       "company": "SynthCorp 253",
       "city": "New York",
       "country": "USA",
@@ -4558,7 +4558,7 @@
       "pct_above_global_avg": -93.1
     },
     {
-      "id": "synth_0a54c64e",
+      "id": "synth_3b0aec12",
       "company": "SynthCorp 254",
       "city": "London",
       "country": "UK",
@@ -4576,7 +4576,7 @@
       "pct_above_global_avg": -98.9
     },
     {
-      "id": "synth_8e60bfde",
+      "id": "synth_f62ba112",
       "company": "SynthCorp 255",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -4594,7 +4594,7 @@
       "pct_above_global_avg": -87.8
     },
     {
-      "id": "synth_22b67d14",
+      "id": "synth_e27a9ed3",
       "company": "SynthCorp 256",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -4612,7 +4612,7 @@
       "pct_above_global_avg": -99.6
     },
     {
-      "id": "synth_1915731b",
+      "id": "synth_f6135bc3",
       "company": "SynthCorp 257",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -4630,7 +4630,7 @@
       "pct_above_global_avg": -94.8
     },
     {
-      "id": "synth_8b84fcd4",
+      "id": "synth_27377635",
       "company": "SynthCorp 258",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -4648,7 +4648,7 @@
       "pct_above_global_avg": -90.7
     },
     {
-      "id": "synth_def81511",
+      "id": "synth_d1b6856a",
       "company": "SynthCorp 259",
       "city": "Shanghai",
       "country": "China",
@@ -4666,7 +4666,7 @@
       "pct_above_global_avg": -94.1
     },
     {
-      "id": "synth_c706a5b8",
+      "id": "synth_d8b309f9",
       "company": "SynthCorp 260",
       "city": "London",
       "country": "UK",
@@ -4684,7 +4684,7 @@
       "pct_above_global_avg": -95.8
     },
     {
-      "id": "synth_b109d0be",
+      "id": "synth_2c0d9eaf",
       "company": "SynthCorp 261",
       "city": "Paris",
       "country": "France",
@@ -4702,7 +4702,7 @@
       "pct_above_global_avg": -86.7
     },
     {
-      "id": "synth_97725462",
+      "id": "synth_c26e4404",
       "company": "SynthCorp 262",
       "city": "Boston",
       "country": "USA",
@@ -4720,7 +4720,7 @@
       "pct_above_global_avg": -26.7
     },
     {
-      "id": "synth_8a60e167",
+      "id": "synth_f6d3b157",
       "company": "SynthCorp 263",
       "city": "Beijing",
       "country": "China",
@@ -4738,7 +4738,7 @@
       "pct_above_global_avg": -96.7
     },
     {
-      "id": "synth_d146c7a0",
+      "id": "synth_e77e801b",
       "company": "SynthCorp 264",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -4756,7 +4756,7 @@
       "pct_above_global_avg": 211.1
     },
     {
-      "id": "synth_4ccbe49d",
+      "id": "synth_11823492",
       "company": "SynthCorp 265",
       "city": "New York",
       "country": "USA",
@@ -4774,7 +4774,7 @@
       "pct_above_global_avg": -86.9
     },
     {
-      "id": "synth_9556d568",
+      "id": "synth_e419480c",
       "company": "SynthCorp 266",
       "city": "Singapore",
       "country": "Singapore",
@@ -4792,7 +4792,7 @@
       "pct_above_global_avg": 609.5
     },
     {
-      "id": "synth_0557b273",
+      "id": "synth_d6be86d9",
       "company": "SynthCorp 267",
       "city": "Austin",
       "country": "USA",
@@ -4810,7 +4810,7 @@
       "pct_above_global_avg": 389.6
     },
     {
-      "id": "synth_d20400a3",
+      "id": "synth_50d3c85d",
       "company": "SynthCorp 268",
       "city": "London",
       "country": "UK",
@@ -4828,7 +4828,7 @@
       "pct_above_global_avg": 25.0
     },
     {
-      "id": "synth_45978394",
+      "id": "synth_978855d3",
       "company": "SynthCorp 269",
       "city": "Sydney",
       "country": "Australia",
@@ -4846,7 +4846,7 @@
       "pct_above_global_avg": -96.4
     },
     {
-      "id": "synth_87abfe76",
+      "id": "synth_04222807",
       "company": "SynthCorp 270",
       "city": "Boston",
       "country": "USA",
@@ -4864,7 +4864,7 @@
       "pct_above_global_avg": -98.8
     },
     {
-      "id": "synth_9eb37483",
+      "id": "synth_5e46faee",
       "company": "SynthCorp 271",
       "city": "Singapore",
       "country": "Singapore",
@@ -4882,7 +4882,7 @@
       "pct_above_global_avg": -87.5
     },
     {
-      "id": "synth_ab988145",
+      "id": "synth_fbb29f2a",
       "company": "SynthCorp 272",
       "city": "Tokyo",
       "country": "Japan",
@@ -4900,7 +4900,7 @@
       "pct_above_global_avg": -85.1
     },
     {
-      "id": "synth_16ac7905",
+      "id": "synth_0eb2aad0",
       "company": "SynthCorp 273",
       "city": "Beijing",
       "country": "China",
@@ -4918,7 +4918,7 @@
       "pct_above_global_avg": 182.1
     },
     {
-      "id": "synth_5fea84d7",
+      "id": "synth_bd6aca95",
       "company": "SynthCorp 274",
       "city": "Singapore",
       "country": "Singapore",
@@ -4936,7 +4936,7 @@
       "pct_above_global_avg": 466.0
     },
     {
-      "id": "synth_f81c3a6c",
+      "id": "synth_c81dae74",
       "company": "SynthCorp 275",
       "city": "New York",
       "country": "USA",
@@ -4954,7 +4954,7 @@
       "pct_above_global_avg": 45.7
     },
     {
-      "id": "synth_044c0fc7",
+      "id": "synth_46c02d5f",
       "company": "SynthCorp 276",
       "city": "San Francisco",
       "country": "USA",
@@ -4972,7 +4972,7 @@
       "pct_above_global_avg": 424.2
     },
     {
-      "id": "synth_5fed3400",
+      "id": "synth_e12fc145",
       "company": "SynthCorp 277",
       "city": "Seattle",
       "country": "USA",
@@ -4990,7 +4990,7 @@
       "pct_above_global_avg": -98.9
     },
     {
-      "id": "synth_ce97db59",
+      "id": "synth_2063fc92",
       "company": "SynthCorp 278",
       "city": "San Francisco",
       "country": "USA",
@@ -5008,7 +5008,7 @@
       "pct_above_global_avg": 4.5
     },
     {
-      "id": "synth_8bc71234",
+      "id": "synth_4108bc9b",
       "company": "SynthCorp 279",
       "city": "New York",
       "country": "USA",
@@ -5026,7 +5026,7 @@
       "pct_above_global_avg": -95.7
     },
     {
-      "id": "synth_c16f3866",
+      "id": "synth_e1c4c8e6",
       "company": "SynthCorp 280",
       "city": "Berlin",
       "country": "Germany",
@@ -5044,7 +5044,7 @@
       "pct_above_global_avg": -82.2
     },
     {
-      "id": "synth_488ece35",
+      "id": "synth_456f2167",
       "company": "SynthCorp 281",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -5062,7 +5062,7 @@
       "pct_above_global_avg": -48.1
     },
     {
-      "id": "synth_95027952",
+      "id": "synth_3acc06ff",
       "company": "SynthCorp 282",
       "city": "London",
       "country": "UK",
@@ -5080,7 +5080,7 @@
       "pct_above_global_avg": -87.6
     },
     {
-      "id": "synth_13f37419",
+      "id": "synth_51d53a28",
       "company": "SynthCorp 283",
       "city": "Tokyo",
       "country": "Japan",
@@ -5098,7 +5098,7 @@
       "pct_above_global_avg": -94.4
     },
     {
-      "id": "synth_5204b6bf",
+      "id": "synth_f2ea20f3",
       "company": "SynthCorp 284",
       "city": "Singapore",
       "country": "Singapore",
@@ -5116,7 +5116,7 @@
       "pct_above_global_avg": -96.5
     },
     {
-      "id": "synth_a84f1f0f",
+      "id": "synth_b4968e46",
       "company": "SynthCorp 285",
       "city": "Toronto",
       "country": "Canada",
@@ -5134,7 +5134,7 @@
       "pct_above_global_avg": 274.9
     },
     {
-      "id": "synth_d9b0f816",
+      "id": "synth_f17d4fcb",
       "company": "SynthCorp 286",
       "city": "New York",
       "country": "USA",
@@ -5152,7 +5152,7 @@
       "pct_above_global_avg": 145.7
     },
     {
-      "id": "synth_fba8d335",
+      "id": "synth_a37d382f",
       "company": "SynthCorp 287",
       "city": "Bangalore",
       "country": "India",
@@ -5170,7 +5170,7 @@
       "pct_above_global_avg": 87.0
     },
     {
-      "id": "synth_5fc99f6d",
+      "id": "synth_7090e8f5",
       "company": "SynthCorp 288",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -5188,7 +5188,7 @@
       "pct_above_global_avg": -87.9
     },
     {
-      "id": "synth_2d684430",
+      "id": "synth_b6e77848",
       "company": "SynthCorp 289",
       "city": "Stockholm",
       "country": "Sweden",
@@ -5206,7 +5206,7 @@
       "pct_above_global_avg": -87.0
     },
     {
-      "id": "synth_13b6e479",
+      "id": "synth_65e0147e",
       "company": "SynthCorp 290",
       "city": "Berlin",
       "country": "Germany",
@@ -5224,7 +5224,7 @@
       "pct_above_global_avg": -80.3
     },
     {
-      "id": "synth_ea7b772c",
+      "id": "synth_b6668c5e",
       "company": "SynthCorp 291",
       "city": "New York",
       "country": "USA",
@@ -5242,7 +5242,7 @@
       "pct_above_global_avg": -98.0
     },
     {
-      "id": "synth_88b413fa",
+      "id": "synth_e0055c41",
       "company": "SynthCorp 292",
       "city": "New York",
       "country": "USA",
@@ -5260,7 +5260,7 @@
       "pct_above_global_avg": -61.1
     },
     {
-      "id": "synth_31ae7bc4",
+      "id": "synth_de72b043",
       "company": "SynthCorp 293",
       "city": "Stockholm",
       "country": "Sweden",
@@ -5278,7 +5278,7 @@
       "pct_above_global_avg": -99.6
     },
     {
-      "id": "synth_4d906e4a",
+      "id": "synth_2edb52c8",
       "company": "SynthCorp 294",
       "city": "New York",
       "country": "USA",
@@ -5296,7 +5296,7 @@
       "pct_above_global_avg": -88.4
     },
     {
-      "id": "synth_b5a72bcf",
+      "id": "synth_392980d5",
       "company": "SynthCorp 295",
       "city": "Beijing",
       "country": "China",
@@ -5314,7 +5314,7 @@
       "pct_above_global_avg": -57.5
     },
     {
-      "id": "synth_70f3125f",
+      "id": "synth_261deb49",
       "company": "SynthCorp 296",
       "city": "Beijing",
       "country": "China",
@@ -5332,7 +5332,7 @@
       "pct_above_global_avg": 279.4
     },
     {
-      "id": "synth_ce7f0907",
+      "id": "synth_5c516b2e",
       "company": "SynthCorp 297",
       "city": "Shanghai",
       "country": "China",
@@ -5350,7 +5350,7 @@
       "pct_above_global_avg": 400.1
     },
     {
-      "id": "synth_58724734",
+      "id": "synth_a5e1cd69",
       "company": "SynthCorp 298",
       "city": "Shanghai",
       "country": "China",
@@ -5368,7 +5368,7 @@
       "pct_above_global_avg": 574.4
     },
     {
-      "id": "synth_c5d3bf18",
+      "id": "synth_ef775b11",
       "company": "SynthCorp 299",
       "city": "Stockholm",
       "country": "Sweden",
@@ -5386,7 +5386,7 @@
       "pct_above_global_avg": -88.8
     },
     {
-      "id": "synth_01e77cc4",
+      "id": "synth_0337528e",
       "company": "SynthCorp 300",
       "city": "Stockholm",
       "country": "Sweden",
@@ -5404,7 +5404,7 @@
       "pct_above_global_avg": -97.5
     },
     {
-      "id": "synth_b56383aa",
+      "id": "synth_d29fb190",
       "company": "SynthCorp 301",
       "city": "San Francisco",
       "country": "USA",
@@ -5422,7 +5422,7 @@
       "pct_above_global_avg": 245.9
     },
     {
-      "id": "synth_c011cead",
+      "id": "synth_f6442b8d",
       "company": "SynthCorp 302",
       "city": "Bangalore",
       "country": "India",
@@ -5440,7 +5440,7 @@
       "pct_above_global_avg": -89.9
     },
     {
-      "id": "synth_7711488b",
+      "id": "synth_631ba527",
       "company": "SynthCorp 303",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -5458,7 +5458,7 @@
       "pct_above_global_avg": 264.9
     },
     {
-      "id": "synth_d78015f3",
+      "id": "synth_85b7c353",
       "company": "SynthCorp 304",
       "city": "Stockholm",
       "country": "Sweden",
@@ -5476,7 +5476,7 @@
       "pct_above_global_avg": -88.8
     },
     {
-      "id": "synth_e0487111",
+      "id": "synth_59294cae",
       "company": "SynthCorp 305",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -5494,7 +5494,7 @@
       "pct_above_global_avg": -83.0
     },
     {
-      "id": "synth_840959cb",
+      "id": "synth_4af5a45e",
       "company": "SynthCorp 306",
       "city": "Berlin",
       "country": "Germany",
@@ -5512,7 +5512,7 @@
       "pct_above_global_avg": -93.7
     },
     {
-      "id": "synth_6e58314e",
+      "id": "synth_f3979329",
       "company": "SynthCorp 307",
       "city": "Beijing",
       "country": "China",
@@ -5530,7 +5530,7 @@
       "pct_above_global_avg": 632.6
     },
     {
-      "id": "synth_ed33ecd5",
+      "id": "synth_b1f850e8",
       "company": "SynthCorp 308",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -5548,7 +5548,7 @@
       "pct_above_global_avg": -83.1
     },
     {
-      "id": "synth_4cdfe0f5",
+      "id": "synth_aec8f7d8",
       "company": "SynthCorp 309",
       "city": "San Francisco",
       "country": "USA",
@@ -5566,7 +5566,7 @@
       "pct_above_global_avg": 51.5
     },
     {
-      "id": "synth_7f43d9b7",
+      "id": "synth_fa7a43c8",
       "company": "SynthCorp 310",
       "city": "London",
       "country": "UK",
@@ -5584,7 +5584,7 @@
       "pct_above_global_avg": -97.1
     },
     {
-      "id": "synth_e06af6b9",
+      "id": "synth_0e9839c0",
       "company": "SynthCorp 311",
       "city": "London",
       "country": "UK",
@@ -5602,7 +5602,7 @@
       "pct_above_global_avg": -66.2
     },
     {
-      "id": "synth_f56bc3b1",
+      "id": "synth_3dbb6ad6",
       "company": "SynthCorp 312",
       "city": "London",
       "country": "UK",
@@ -5620,7 +5620,7 @@
       "pct_above_global_avg": -95.8
     },
     {
-      "id": "synth_d1997fe0",
+      "id": "synth_c7cf96ee",
       "company": "SynthCorp 313",
       "city": "Shanghai",
       "country": "China",
@@ -5638,7 +5638,7 @@
       "pct_above_global_avg": -87.8
     },
     {
-      "id": "synth_fb11059e",
+      "id": "synth_0ad62ff9",
       "company": "SynthCorp 314",
       "city": "Berlin",
       "country": "Germany",
@@ -5656,7 +5656,7 @@
       "pct_above_global_avg": -96.6
     },
     {
-      "id": "synth_3cc364d5",
+      "id": "synth_71312892",
       "company": "SynthCorp 315",
       "city": "Boston",
       "country": "USA",
@@ -5674,7 +5674,7 @@
       "pct_above_global_avg": -67.2
     },
     {
-      "id": "synth_1121e8d0",
+      "id": "synth_a811f0f0",
       "company": "SynthCorp 316",
       "city": "Boston",
       "country": "USA",
@@ -5692,7 +5692,7 @@
       "pct_above_global_avg": -42.2
     },
     {
-      "id": "synth_0c2d0e5f",
+      "id": "synth_dd88c84c",
       "company": "SynthCorp 317",
       "city": "New York",
       "country": "USA",
@@ -5710,7 +5710,7 @@
       "pct_above_global_avg": -83.2
     },
     {
-      "id": "synth_90f1c871",
+      "id": "synth_fdb15752",
       "company": "SynthCorp 318",
       "city": "London",
       "country": "UK",
@@ -5728,7 +5728,7 @@
       "pct_above_global_avg": -96.6
     },
     {
-      "id": "synth_a48a63cb",
+      "id": "synth_f0db2116",
       "company": "SynthCorp 319",
       "city": "Seattle",
       "country": "USA",
@@ -5746,7 +5746,7 @@
       "pct_above_global_avg": -83.7
     },
     {
-      "id": "synth_81e53e0a",
+      "id": "synth_4bc4bbc5",
       "company": "SynthCorp 320",
       "city": "Stockholm",
       "country": "Sweden",
@@ -5764,7 +5764,7 @@
       "pct_above_global_avg": -51.5
     },
     {
-      "id": "synth_b9d1b810",
+      "id": "synth_a7aeac10",
       "company": "SynthCorp 321",
       "city": "Stockholm",
       "country": "Sweden",
@@ -5782,7 +5782,7 @@
       "pct_above_global_avg": 48.7
     },
     {
-      "id": "synth_cfac3492",
+      "id": "synth_d4071e54",
       "company": "SynthCorp 322",
       "city": "New York",
       "country": "USA",
@@ -5800,7 +5800,7 @@
       "pct_above_global_avg": 68.7
     },
     {
-      "id": "synth_5a2bc54f",
+      "id": "synth_c923d1ac",
       "company": "SynthCorp 323",
       "city": "Shanghai",
       "country": "China",
@@ -5818,7 +5818,7 @@
       "pct_above_global_avg": -99.6
     },
     {
-      "id": "synth_47c17d73",
+      "id": "synth_d3151e1e",
       "company": "SynthCorp 324",
       "city": "Boston",
       "country": "USA",
@@ -5836,7 +5836,7 @@
       "pct_above_global_avg": -78.8
     },
     {
-      "id": "synth_b38a30a4",
+      "id": "synth_ed2134b6",
       "company": "SynthCorp 325",
       "city": "Shanghai",
       "country": "China",
@@ -5854,7 +5854,7 @@
       "pct_above_global_avg": -91.5
     },
     {
-      "id": "synth_771c6ffc",
+      "id": "synth_cce82905",
       "company": "SynthCorp 326",
       "city": "Sydney",
       "country": "Australia",
@@ -5872,7 +5872,7 @@
       "pct_above_global_avg": 45.2
     },
     {
-      "id": "synth_38852f89",
+      "id": "synth_16a6c4c0",
       "company": "SynthCorp 327",
       "city": "Dubai",
       "country": "UAE",
@@ -5890,7 +5890,7 @@
       "pct_above_global_avg": -97.0
     },
     {
-      "id": "synth_7fce933e",
+      "id": "synth_32a16247",
       "company": "SynthCorp 328",
       "city": "Berlin",
       "country": "Germany",
@@ -5908,7 +5908,7 @@
       "pct_above_global_avg": -86.6
     },
     {
-      "id": "synth_5a9fca90",
+      "id": "synth_0d50d518",
       "company": "SynthCorp 329",
       "city": "Sydney",
       "country": "Australia",
@@ -5926,7 +5926,7 @@
       "pct_above_global_avg": -78.1
     },
     {
-      "id": "synth_a82f30ee",
+      "id": "synth_e8826001",
       "company": "SynthCorp 330",
       "city": "Toronto",
       "country": "Canada",
@@ -5944,7 +5944,7 @@
       "pct_above_global_avg": -92.7
     },
     {
-      "id": "synth_e2a41909",
+      "id": "synth_a373929d",
       "company": "SynthCorp 331",
       "city": "Shanghai",
       "country": "China",
@@ -5962,7 +5962,7 @@
       "pct_above_global_avg": -78.6
     },
     {
-      "id": "synth_608c88a5",
+      "id": "synth_df29ac92",
       "company": "SynthCorp 332",
       "city": "Austin",
       "country": "USA",
@@ -5980,7 +5980,7 @@
       "pct_above_global_avg": 72.4
     },
     {
-      "id": "synth_cc7e3848",
+      "id": "synth_9d6dbb7f",
       "company": "SynthCorp 333",
       "city": "San Francisco",
       "country": "USA",
@@ -5998,7 +5998,7 @@
       "pct_above_global_avg": 424.8
     },
     {
-      "id": "synth_9d62826f",
+      "id": "synth_f0adca4a",
       "company": "SynthCorp 334",
       "city": "Austin",
       "country": "USA",
@@ -6016,7 +6016,7 @@
       "pct_above_global_avg": -97.1
     },
     {
-      "id": "synth_76242ddb",
+      "id": "synth_14adc260",
       "company": "SynthCorp 335",
       "city": "Austin",
       "country": "USA",
@@ -6034,7 +6034,7 @@
       "pct_above_global_avg": 12.7
     },
     {
-      "id": "synth_10891483",
+      "id": "synth_de56636b",
       "company": "SynthCorp 336",
       "city": "New York",
       "country": "USA",
@@ -6052,7 +6052,7 @@
       "pct_above_global_avg": -96.4
     },
     {
-      "id": "synth_b6a4d95d",
+      "id": "synth_2cd42ec7",
       "company": "SynthCorp 337",
       "city": "Seattle",
       "country": "USA",
@@ -6070,7 +6070,7 @@
       "pct_above_global_avg": -86.7
     },
     {
-      "id": "synth_a17b47c0",
+      "id": "synth_2e6fef25",
       "company": "SynthCorp 338",
       "city": "Berlin",
       "country": "Germany",
@@ -6088,7 +6088,7 @@
       "pct_above_global_avg": 265.0
     },
     {
-      "id": "synth_86ca6c34",
+      "id": "synth_2c5a14e7",
       "company": "SynthCorp 339",
       "city": "Singapore",
       "country": "Singapore",
@@ -6106,7 +6106,7 @@
       "pct_above_global_avg": -55.9
     },
     {
-      "id": "synth_f0055447",
+      "id": "synth_71216224",
       "company": "SynthCorp 340",
       "city": "Seattle",
       "country": "USA",
@@ -6124,7 +6124,7 @@
       "pct_above_global_avg": 147.5
     },
     {
-      "id": "synth_a4a0fe5a",
+      "id": "synth_ba1af8b2",
       "company": "SynthCorp 341",
       "city": "Paris",
       "country": "France",
@@ -6142,7 +6142,7 @@
       "pct_above_global_avg": -95.3
     },
     {
-      "id": "synth_d4ed5c33",
+      "id": "synth_42d0bb87",
       "company": "SynthCorp 342",
       "city": "San Francisco",
       "country": "USA",
@@ -6160,7 +6160,7 @@
       "pct_above_global_avg": 245.5
     },
     {
-      "id": "synth_c484840c",
+      "id": "synth_c658f41b",
       "company": "SynthCorp 343",
       "city": "Berlin",
       "country": "Germany",
@@ -6178,7 +6178,7 @@
       "pct_above_global_avg": -57.4
     },
     {
-      "id": "synth_fa1bb7b8",
+      "id": "synth_18cf5e0f",
       "company": "SynthCorp 344",
       "city": "Boston",
       "country": "USA",
@@ -6196,7 +6196,7 @@
       "pct_above_global_avg": -62.7
     },
     {
-      "id": "synth_be81bb72",
+      "id": "synth_96655e92",
       "company": "SynthCorp 345",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -6214,7 +6214,7 @@
       "pct_above_global_avg": -77.8
     },
     {
-      "id": "synth_fbb7d709",
+      "id": "synth_0112a3be",
       "company": "SynthCorp 346",
       "city": "San Francisco",
       "country": "USA",
@@ -6232,7 +6232,7 @@
       "pct_above_global_avg": -97.0
     },
     {
-      "id": "synth_e4370fa7",
+      "id": "synth_310d4884",
       "company": "SynthCorp 347",
       "city": "Beijing",
       "country": "China",
@@ -6250,7 +6250,7 @@
       "pct_above_global_avg": 16.2
     },
     {
-      "id": "synth_3e0f180f",
+      "id": "synth_6a0389db",
       "company": "SynthCorp 348",
       "city": "San Francisco",
       "country": "USA",
@@ -6268,7 +6268,7 @@
       "pct_above_global_avg": -97.7
     },
     {
-      "id": "synth_c59a7ac5",
+      "id": "synth_37f96732",
       "company": "SynthCorp 349",
       "city": "Boston",
       "country": "USA",
@@ -6286,7 +6286,7 @@
       "pct_above_global_avg": -26.4
     },
     {
-      "id": "synth_b3240d9e",
+      "id": "synth_7c60afad",
       "company": "SynthCorp 350",
       "city": "Beijing",
       "country": "China",
@@ -6304,7 +6304,7 @@
       "pct_above_global_avg": 71.7
     },
     {
-      "id": "synth_485250dd",
+      "id": "synth_b4762f82",
       "company": "SynthCorp 351",
       "city": "Paris",
       "country": "France",
@@ -6322,7 +6322,7 @@
       "pct_above_global_avg": 62.2
     },
     {
-      "id": "synth_f8d1872d",
+      "id": "synth_bf55da8a",
       "company": "SynthCorp 352",
       "city": "Berlin",
       "country": "Germany",
@@ -6340,7 +6340,7 @@
       "pct_above_global_avg": 105.4
     },
     {
-      "id": "synth_a79bcde4",
+      "id": "synth_94ecc016",
       "company": "SynthCorp 353",
       "city": "Toronto",
       "country": "Canada",
@@ -6358,7 +6358,7 @@
       "pct_above_global_avg": -94.1
     },
     {
-      "id": "synth_4a95ad14",
+      "id": "synth_17cfa791",
       "company": "SynthCorp 354",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -6376,7 +6376,7 @@
       "pct_above_global_avg": -96.3
     },
     {
-      "id": "synth_5b4fb5b1",
+      "id": "synth_78101db1",
       "company": "SynthCorp 355",
       "city": "Paris",
       "country": "France",
@@ -6394,7 +6394,7 @@
       "pct_above_global_avg": -98.1
     },
     {
-      "id": "synth_a6f4d1de",
+      "id": "synth_b836a209",
       "company": "SynthCorp 356",
       "city": "Tokyo",
       "country": "Japan",
@@ -6412,7 +6412,7 @@
       "pct_above_global_avg": 217.0
     },
     {
-      "id": "synth_0f4c5426",
+      "id": "synth_7d0887c8",
       "company": "SynthCorp 357",
       "city": "Toronto",
       "country": "Canada",
@@ -6430,7 +6430,7 @@
       "pct_above_global_avg": -46.7
     },
     {
-      "id": "synth_b04687e8",
+      "id": "synth_04ddf0e9",
       "company": "SynthCorp 358",
       "city": "San Francisco",
       "country": "USA",
@@ -6448,7 +6448,7 @@
       "pct_above_global_avg": -78.6
     },
     {
-      "id": "synth_6337c156",
+      "id": "synth_daf69b35",
       "company": "SynthCorp 359",
       "city": "Bangalore",
       "country": "India",
@@ -6466,7 +6466,7 @@
       "pct_above_global_avg": -89.4
     },
     {
-      "id": "synth_a121d509",
+      "id": "synth_0ef72f46",
       "company": "SynthCorp 360",
       "city": "Paris",
       "country": "France",
@@ -6484,7 +6484,7 @@
       "pct_above_global_avg": -58.5
     },
     {
-      "id": "synth_59646678",
+      "id": "synth_407ddbce",
       "company": "SynthCorp 361",
       "city": "Singapore",
       "country": "Singapore",
@@ -6502,7 +6502,7 @@
       "pct_above_global_avg": -63.6
     },
     {
-      "id": "synth_639c5de8",
+      "id": "synth_dcc47a8d",
       "company": "SynthCorp 362",
       "city": "London",
       "country": "UK",
@@ -6520,7 +6520,7 @@
       "pct_above_global_avg": 347.1
     },
     {
-      "id": "synth_ca0e00a8",
+      "id": "synth_57e5236c",
       "company": "SynthCorp 363",
       "city": "Beijing",
       "country": "China",
@@ -6538,7 +6538,7 @@
       "pct_above_global_avg": -98.0
     },
     {
-      "id": "synth_17c5961c",
+      "id": "synth_441811d7",
       "company": "SynthCorp 364",
       "city": "New York",
       "country": "USA",
@@ -6556,7 +6556,7 @@
       "pct_above_global_avg": -97.7
     },
     {
-      "id": "synth_55ff5ae9",
+      "id": "synth_63f87afa",
       "company": "SynthCorp 365",
       "city": "Sydney",
       "country": "Australia",
@@ -6574,7 +6574,7 @@
       "pct_above_global_avg": -96.4
     },
     {
-      "id": "synth_28585ad9",
+      "id": "synth_50ad5300",
       "company": "SynthCorp 366",
       "city": "Beijing",
       "country": "China",
@@ -6592,7 +6592,7 @@
       "pct_above_global_avg": -99.3
     },
     {
-      "id": "synth_3d91a94f",
+      "id": "synth_585429bf",
       "company": "SynthCorp 367",
       "city": "New York",
       "country": "USA",
@@ -6610,7 +6610,7 @@
       "pct_above_global_avg": -88.1
     },
     {
-      "id": "synth_dcf06212",
+      "id": "synth_295902a0",
       "company": "SynthCorp 368",
       "city": "Beijing",
       "country": "China",
@@ -6628,7 +6628,7 @@
       "pct_above_global_avg": -96.5
     },
     {
-      "id": "synth_262c1e04",
+      "id": "synth_52b26a98",
       "company": "SynthCorp 369",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -6646,7 +6646,7 @@
       "pct_above_global_avg": -83.7
     },
     {
-      "id": "synth_78b50c07",
+      "id": "synth_1d67d934",
       "company": "SynthCorp 370",
       "city": "Toronto",
       "country": "Canada",
@@ -6664,7 +6664,7 @@
       "pct_above_global_avg": -96.0
     },
     {
-      "id": "synth_172eb880",
+      "id": "synth_10587f2b",
       "company": "SynthCorp 371",
       "city": "Bangalore",
       "country": "India",
@@ -6682,7 +6682,7 @@
       "pct_above_global_avg": 208.2
     },
     {
-      "id": "synth_c7a58cb4",
+      "id": "synth_b212aad5",
       "company": "SynthCorp 372",
       "city": "Austin",
       "country": "USA",
@@ -6700,7 +6700,7 @@
       "pct_above_global_avg": -42.7
     },
     {
-      "id": "synth_434d8787",
+      "id": "synth_e6be760d",
       "company": "SynthCorp 373",
       "city": "Tokyo",
       "country": "Japan",
@@ -6718,7 +6718,7 @@
       "pct_above_global_avg": -79.2
     },
     {
-      "id": "synth_ef3c0f1a",
+      "id": "synth_68747d22",
       "company": "SynthCorp 374",
       "city": "Tokyo",
       "country": "Japan",
@@ -6736,7 +6736,7 @@
       "pct_above_global_avg": -78.4
     },
     {
-      "id": "synth_208979ea",
+      "id": "synth_5d769df2",
       "company": "SynthCorp 375",
       "city": "Shanghai",
       "country": "China",
@@ -6754,7 +6754,7 @@
       "pct_above_global_avg": 314.4
     },
     {
-      "id": "synth_4656f138",
+      "id": "synth_87400e3c",
       "company": "SynthCorp 376",
       "city": "Beijing",
       "country": "China",
@@ -6772,7 +6772,7 @@
       "pct_above_global_avg": -85.5
     },
     {
-      "id": "synth_22b5ac49",
+      "id": "synth_5795ef28",
       "company": "SynthCorp 377",
       "city": "London",
       "country": "UK",
@@ -6790,7 +6790,7 @@
       "pct_above_global_avg": 96.9
     },
     {
-      "id": "synth_98fae53d",
+      "id": "synth_11e0c071",
       "company": "SynthCorp 378",
       "city": "Singapore",
       "country": "Singapore",
@@ -6808,7 +6808,7 @@
       "pct_above_global_avg": -87.6
     },
     {
-      "id": "synth_0b3b1e24",
+      "id": "synth_cde2be08",
       "company": "SynthCorp 379",
       "city": "Boston",
       "country": "USA",
@@ -6826,7 +6826,7 @@
       "pct_above_global_avg": -97.9
     },
     {
-      "id": "synth_8532b7fc",
+      "id": "synth_c9fae915",
       "company": "SynthCorp 380",
       "city": "New York",
       "country": "USA",
@@ -6844,7 +6844,7 @@
       "pct_above_global_avg": -67.6
     },
     {
-      "id": "synth_b70e14d9",
+      "id": "synth_37980522",
       "company": "SynthCorp 381",
       "city": "Boston",
       "country": "USA",
@@ -6862,7 +6862,7 @@
       "pct_above_global_avg": 26.7
     },
     {
-      "id": "synth_4031346f",
+      "id": "synth_f249c2e7",
       "company": "SynthCorp 382",
       "city": "San Francisco",
       "country": "USA",
@@ -6880,7 +6880,7 @@
       "pct_above_global_avg": 64.5
     },
     {
-      "id": "synth_603801bf",
+      "id": "synth_5833b333",
       "company": "SynthCorp 383",
       "city": "Shanghai",
       "country": "China",
@@ -6898,7 +6898,7 @@
       "pct_above_global_avg": -83.8
     },
     {
-      "id": "synth_29071e78",
+      "id": "synth_05e2b6ec",
       "company": "SynthCorp 384",
       "city": "London",
       "country": "UK",
@@ -6916,7 +6916,7 @@
       "pct_above_global_avg": -96.1
     },
     {
-      "id": "synth_fa294c70",
+      "id": "synth_9e9f397e",
       "company": "SynthCorp 385",
       "city": "San Francisco",
       "country": "USA",
@@ -6934,7 +6934,7 @@
       "pct_above_global_avg": -40.7
     },
     {
-      "id": "synth_1c6db0cf",
+      "id": "synth_075dc493",
       "company": "SynthCorp 386",
       "city": "Sydney",
       "country": "Australia",
@@ -6952,7 +6952,7 @@
       "pct_above_global_avg": -97.1
     },
     {
-      "id": "synth_e184e061",
+      "id": "synth_5373a85f",
       "company": "SynthCorp 387",
       "city": "Sydney",
       "country": "Australia",
@@ -6970,7 +6970,7 @@
       "pct_above_global_avg": 73.6
     },
     {
-      "id": "synth_dfd6520b",
+      "id": "synth_a09c2d9e",
       "company": "SynthCorp 388",
       "city": "Seattle",
       "country": "USA",
@@ -6988,7 +6988,7 @@
       "pct_above_global_avg": 49.6
     },
     {
-      "id": "synth_1988fbad",
+      "id": "synth_58cba695",
       "company": "SynthCorp 389",
       "city": "Paris",
       "country": "France",
@@ -7006,7 +7006,7 @@
       "pct_above_global_avg": 512.9
     },
     {
-      "id": "synth_ff50a963",
+      "id": "synth_cd86328b",
       "company": "SynthCorp 390",
       "city": "Singapore",
       "country": "Singapore",
@@ -7024,7 +7024,7 @@
       "pct_above_global_avg": 486.4
     },
     {
-      "id": "synth_112dec20",
+      "id": "synth_de79de48",
       "company": "SynthCorp 391",
       "city": "New York",
       "country": "USA",
@@ -7042,7 +7042,7 @@
       "pct_above_global_avg": 581.8
     },
     {
-      "id": "synth_76f3d275",
+      "id": "synth_f950b51c",
       "company": "SynthCorp 392",
       "city": "San Francisco",
       "country": "USA",
@@ -7060,7 +7060,7 @@
       "pct_above_global_avg": -95.9
     },
     {
-      "id": "synth_26011e8b",
+      "id": "synth_de13dd81",
       "company": "SynthCorp 393",
       "city": "Bangalore",
       "country": "India",
@@ -7078,7 +7078,7 @@
       "pct_above_global_avg": -98.9
     },
     {
-      "id": "synth_d6741503",
+      "id": "synth_280e37d3",
       "company": "SynthCorp 394",
       "city": "Austin",
       "country": "USA",
@@ -7096,7 +7096,7 @@
       "pct_above_global_avg": 5.3
     },
     {
-      "id": "synth_1894a5b1",
+      "id": "synth_f3a3b766",
       "company": "SynthCorp 395",
       "city": "San Francisco",
       "country": "USA",
@@ -7114,7 +7114,7 @@
       "pct_above_global_avg": -95.2
     },
     {
-      "id": "synth_86771a22",
+      "id": "synth_42febfc8",
       "company": "SynthCorp 396",
       "city": "Boston",
       "country": "USA",
@@ -7132,7 +7132,7 @@
       "pct_above_global_avg": -58.0
     },
     {
-      "id": "synth_5011e6ae",
+      "id": "synth_298bf723",
       "company": "SynthCorp 397",
       "city": "Dubai",
       "country": "UAE",
@@ -7150,7 +7150,7 @@
       "pct_above_global_avg": -95.5
     },
     {
-      "id": "synth_9fc21bef",
+      "id": "synth_05dc1d28",
       "company": "SynthCorp 398",
       "city": "Beijing",
       "country": "China",
@@ -7168,7 +7168,7 @@
       "pct_above_global_avg": -95.3
     },
     {
-      "id": "synth_b7d7e1ea",
+      "id": "synth_321f7fd2",
       "company": "SynthCorp 399",
       "city": "San Francisco",
       "country": "USA",
@@ -7186,7 +7186,7 @@
       "pct_above_global_avg": -97.0
     },
     {
-      "id": "synth_8f19a824",
+      "id": "synth_2dfa7a8b",
       "company": "SynthCorp 400",
       "city": "Beijing",
       "country": "China",
@@ -7204,7 +7204,7 @@
       "pct_above_global_avg": -96.0
     },
     {
-      "id": "synth_5ee95ca2",
+      "id": "synth_f2638bd7",
       "company": "SynthCorp 401",
       "city": "Beijing",
       "country": "China",
@@ -7222,7 +7222,7 @@
       "pct_above_global_avg": -73.8
     },
     {
-      "id": "synth_43c05453",
+      "id": "synth_72684a24",
       "company": "SynthCorp 402",
       "city": "Bangalore",
       "country": "India",
@@ -7240,7 +7240,7 @@
       "pct_above_global_avg": -95.1
     },
     {
-      "id": "synth_ca26c7ba",
+      "id": "synth_9fbb3440",
       "company": "SynthCorp 403",
       "city": "Seattle",
       "country": "USA",
@@ -7258,7 +7258,7 @@
       "pct_above_global_avg": 25.5
     },
     {
-      "id": "synth_66268967",
+      "id": "synth_68ffff89",
       "company": "SynthCorp 404",
       "city": "Seattle",
       "country": "USA",
@@ -7276,7 +7276,7 @@
       "pct_above_global_avg": 232.0
     },
     {
-      "id": "synth_0f10ef43",
+      "id": "synth_89103521",
       "company": "SynthCorp 405",
       "city": "Boston",
       "country": "USA",
@@ -7294,7 +7294,7 @@
       "pct_above_global_avg": -99.6
     },
     {
-      "id": "synth_dec3188e",
+      "id": "synth_14a8e870",
       "company": "SynthCorp 406",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -7312,7 +7312,7 @@
       "pct_above_global_avg": 333.3
     },
     {
-      "id": "synth_19ca64e2",
+      "id": "synth_2535ed39",
       "company": "SynthCorp 407",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -7330,7 +7330,7 @@
       "pct_above_global_avg": -57.2
     },
     {
-      "id": "synth_4165147c",
+      "id": "synth_1a1cf2ce",
       "company": "SynthCorp 408",
       "city": "Singapore",
       "country": "Singapore",
@@ -7348,7 +7348,7 @@
       "pct_above_global_avg": 462.6
     },
     {
-      "id": "synth_98dbcdda",
+      "id": "synth_2dcf936d",
       "company": "SynthCorp 409",
       "city": "Berlin",
       "country": "Germany",
@@ -7366,7 +7366,7 @@
       "pct_above_global_avg": -98.4
     },
     {
-      "id": "synth_495c0b00",
+      "id": "synth_e20ce0f9",
       "company": "SynthCorp 410",
       "city": "Dubai",
       "country": "UAE",
@@ -7384,7 +7384,7 @@
       "pct_above_global_avg": 240.7
     },
     {
-      "id": "synth_a6800f60",
+      "id": "synth_b9edbb29",
       "company": "SynthCorp 411",
       "city": "London",
       "country": "UK",
@@ -7402,7 +7402,7 @@
       "pct_above_global_avg": -92.8
     },
     {
-      "id": "synth_fdd93d40",
+      "id": "synth_6f17edc5",
       "company": "SynthCorp 412",
       "city": "London",
       "country": "UK",
@@ -7420,7 +7420,7 @@
       "pct_above_global_avg": 33.7
     },
     {
-      "id": "synth_978d7865",
+      "id": "synth_49987657",
       "company": "SynthCorp 413",
       "city": "Beijing",
       "country": "China",
@@ -7438,7 +7438,7 @@
       "pct_above_global_avg": -87.8
     },
     {
-      "id": "synth_dc578218",
+      "id": "synth_85553838",
       "company": "SynthCorp 414",
       "city": "Beijing",
       "country": "China",
@@ -7456,7 +7456,7 @@
       "pct_above_global_avg": -76.5
     },
     {
-      "id": "synth_0351eebe",
+      "id": "synth_740f0fc1",
       "company": "SynthCorp 415",
       "city": "Tel Aviv",
       "country": "Israel",
@@ -7474,7 +7474,7 @@
       "pct_above_global_avg": -66.5
     },
     {
-      "id": "synth_5d25cacb",
+      "id": "synth_e1c14632",
       "company": "SynthCorp 416",
       "city": "Stockholm",
       "country": "Sweden",
@@ -7492,7 +7492,7 @@
       "pct_above_global_avg": -53.6
     },
     {
-      "id": "synth_089787c0",
+      "id": "synth_a890b63f",
       "company": "SynthCorp 417",
       "city": "Beijing",
       "country": "China",
@@ -7510,7 +7510,7 @@
       "pct_above_global_avg": -80.0
     },
     {
-      "id": "synth_50f4644e",
+      "id": "synth_97af1b70",
       "company": "SynthCorp 418",
       "city": "Tokyo",
       "country": "Japan",
@@ -7528,7 +7528,7 @@
       "pct_above_global_avg": 47.7
     },
     {
-      "id": "synth_cf080311",
+      "id": "synth_f41a866a",
       "company": "SynthCorp 419",
       "city": "Boston",
       "country": "USA",
@@ -7546,7 +7546,7 @@
       "pct_above_global_avg": -81.3
     },
     {
-      "id": "synth_3805276e",
+      "id": "synth_95d29508",
       "company": "SynthCorp 420",
       "city": "Stockholm",
       "country": "Sweden",
@@ -7564,7 +7564,7 @@
       "pct_above_global_avg": -94.8
     },
     {
-      "id": "synth_99975691",
+      "id": "synth_407675ba",
       "company": "SynthCorp 421",
       "city": "Berlin",
       "country": "Germany",
@@ -7582,7 +7582,7 @@
       "pct_above_global_avg": -97.9
     },
     {
-      "id": "synth_084451e7",
+      "id": "synth_cfbda9ef",
       "company": "SynthCorp 422",
       "city": "Toronto",
       "country": "Canada",
@@ -7600,7 +7600,7 @@
       "pct_above_global_avg": -96.2
     },
     {
-      "id": "synth_8af49315",
+      "id": "synth_59d4107a",
       "company": "SynthCorp 423",
       "city": "Dubai",
       "country": "UAE",
@@ -7618,7 +7618,7 @@
       "pct_above_global_avg": 116.0
     },
     {
-      "id": "synth_317bbc2d",
+      "id": "synth_44bb861e",
       "company": "SynthCorp 424",
       "city": "New York",
       "country": "USA",
@@ -7636,7 +7636,7 @@
       "pct_above_global_avg": -87.7
     },
     {
-      "id": "synth_6cad5aee",
+      "id": "synth_dd6732fb",
       "company": "SynthCorp 425",
       "city": "Seattle",
       "country": "USA",
@@ -7654,7 +7654,7 @@
       "pct_above_global_avg": -89.2
     },
     {
-      "id": "synth_bd272cb2",
+      "id": "synth_51cd36ba",
       "company": "SynthCorp 426",
       "city": "New York",
       "country": "USA",
@@ -7672,7 +7672,7 @@
       "pct_above_global_avg": -15.3
     },
     {
-      "id": "synth_35462895",
+      "id": "synth_77aee2d2",
       "company": "SynthCorp 427",
       "city": "Shanghai",
       "country": "China",
@@ -7690,7 +7690,7 @@
       "pct_above_global_avg": -94.6
     },
     {
-      "id": "synth_4b6b0101",
+      "id": "synth_da159d0b",
       "company": "SynthCorp 428",
       "city": "San Francisco",
       "country": "USA",
@@ -7708,7 +7708,7 @@
       "pct_above_global_avg": 57.4
     },
     {
-      "id": "synth_c7941f3b",
+      "id": "synth_27d6f75c",
       "company": "SynthCorp 429",
       "city": "Shanghai",
       "country": "China",
@@ -7726,7 +7726,7 @@
       "pct_above_global_avg": -83.4
     },
     {
-      "id": "synth_7064846f",
+      "id": "synth_a3c9968a",
       "company": "SynthCorp 430",
       "city": "Toronto",
       "country": "Canada",
@@ -7744,7 +7744,7 @@
       "pct_above_global_avg": 59.4
     },
     {
-      "id": "synth_6fb4d20c",
+      "id": "synth_be042348",
       "company": "SynthCorp 431",
       "city": "Shanghai",
       "country": "China",
@@ -7762,7 +7762,7 @@
       "pct_above_global_avg": -16.3
     },
     {
-      "id": "synth_e99e16c8",
+      "id": "synth_acc9dec8",
       "company": "SynthCorp 432",
       "city": "Bangalore",
       "country": "India",
@@ -7780,7 +7780,7 @@
       "pct_above_global_avg": 310.0
     },
     {
-      "id": "synth_e2681efd",
+      "id": "synth_a690e89f",
       "company": "SynthCorp 433",
       "city": "Berlin",
       "country": "Germany",
@@ -7798,7 +7798,7 @@
       "pct_above_global_avg": -77.4
     },
     {
-      "id": "synth_a8da60ca",
+      "id": "synth_46146823",
       "company": "SynthCorp 434",
       "city": "Shanghai",
       "country": "China",
@@ -7816,7 +7816,7 @@
       "pct_above_global_avg": 9.2
     },
     {
-      "id": "synth_a211304a",
+      "id": "synth_5d4fcd7d",
       "company": "SynthCorp 435",
       "city": "Austin",
       "country": "USA",
@@ -7834,7 +7834,7 @@
       "pct_above_global_avg": -98.3
     },
     {
-      "id": "synth_fb3a78dd",
+      "id": "synth_b2129a6d",
       "company": "SynthCorp 436",
       "city": "Boston",
       "country": "USA",
@@ -7852,7 +7852,7 @@
       "pct_above_global_avg": -66.9
     },
     {
-      "id": "synth_4931d166",
+      "id": "synth_a42e0949",
       "company": "SynthCorp 437",
       "city": "Singapore",
       "country": "Singapore",
@@ -7870,7 +7870,7 @@
       "pct_above_global_avg": 100.4
     },
     {
-      "id": "synth_86bc002c",
+      "id": "synth_778e2f23",
       "company": "SynthCorp 438",
       "city": "Seattle",
       "country": "USA",
@@ -7888,7 +7888,7 @@
       "pct_above_global_avg": -79.8
     },
     {
-      "id": "synth_f24543c3",
+      "id": "synth_721c1ae7",
       "company": "SynthCorp 439",
       "city": "San Francisco",
       "country": "USA",
@@ -7906,7 +7906,7 @@
       "pct_above_global_avg": -97.4
     },
     {
-      "id": "synth_d93ce1ff",
+      "id": "synth_2e83242e",
       "company": "SynthCorp 440",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -7924,7 +7924,7 @@
       "pct_above_global_avg": -89.7
     },
     {
-      "id": "synth_854f854f",
+      "id": "synth_21ec0612",
       "company": "SynthCorp 441",
       "city": "London",
       "country": "UK",
@@ -7942,7 +7942,7 @@
       "pct_above_global_avg": 60.3
     },
     {
-      "id": "synth_cac41e4a",
+      "id": "synth_cd400089",
       "company": "SynthCorp 442",
       "city": "Dubai",
       "country": "UAE",
@@ -7960,7 +7960,7 @@
       "pct_above_global_avg": -95.1
     },
     {
-      "id": "synth_7d49aaea",
+      "id": "synth_65dc81d5",
       "company": "SynthCorp 443",
       "city": "New York",
       "country": "USA",
@@ -7978,7 +7978,7 @@
       "pct_above_global_avg": 252.6
     },
     {
-      "id": "synth_a3c7035b",
+      "id": "synth_44951019",
       "company": "SynthCorp 444",
       "city": "New York",
       "country": "USA",
@@ -7996,7 +7996,7 @@
       "pct_above_global_avg": 49.4
     },
     {
-      "id": "synth_caf39128",
+      "id": "synth_fb324feb",
       "company": "SynthCorp 445",
       "city": "Boston",
       "country": "USA",
@@ -8014,7 +8014,7 @@
       "pct_above_global_avg": -96.0
     },
     {
-      "id": "synth_2489c5cc",
+      "id": "synth_46e99a27",
       "company": "SynthCorp 446",
       "city": "Boston",
       "country": "USA",
@@ -8032,7 +8032,7 @@
       "pct_above_global_avg": 87.5
     },
     {
-      "id": "synth_5671b4bb",
+      "id": "synth_2348b1c5",
       "company": "SynthCorp 447",
       "city": "New York",
       "country": "USA",
@@ -8050,7 +8050,7 @@
       "pct_above_global_avg": -43.8
     },
     {
-      "id": "synth_96db80b5",
+      "id": "synth_65762c96",
       "company": "SynthCorp 448",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -8068,7 +8068,7 @@
       "pct_above_global_avg": -62.0
     },
     {
-      "id": "synth_df3263c3",
+      "id": "synth_e413c9df",
       "company": "SynthCorp 449",
       "city": "Paris",
       "country": "France",
@@ -8086,7 +8086,7 @@
       "pct_above_global_avg": 223.6
     },
     {
-      "id": "synth_4ba329f4",
+      "id": "synth_45c95ec1",
       "company": "SynthCorp 450",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -8104,7 +8104,7 @@
       "pct_above_global_avg": -85.4
     },
     {
-      "id": "synth_9c2c4a80",
+      "id": "synth_3ea632b7",
       "company": "SynthCorp 451",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -8122,7 +8122,7 @@
       "pct_above_global_avg": -56.3
     },
     {
-      "id": "synth_651595c4",
+      "id": "synth_9ddba9e2",
       "company": "SynthCorp 452",
       "city": "Toronto",
       "country": "Canada",
@@ -8140,7 +8140,7 @@
       "pct_above_global_avg": -96.6
     },
     {
-      "id": "synth_81c63ed3",
+      "id": "synth_ab1a5332",
       "company": "SynthCorp 453",
       "city": "S\u00e3o Paulo",
       "country": "Brazil",
@@ -8158,7 +8158,7 @@
       "pct_above_global_avg": -36.0
     },
     {
-      "id": "synth_796e2c61",
+      "id": "synth_7ac001e1",
       "company": "SynthCorp 454",
       "city": "Bangalore",
       "country": "India",
@@ -8176,7 +8176,7 @@
       "pct_above_global_avg": -45.3
     },
     {
-      "id": "synth_9493dc96",
+      "id": "synth_9a35f706",
       "company": "SynthCorp 455",
       "city": "San Francisco",
       "country": "USA",
@@ -8194,7 +8194,7 @@
       "pct_above_global_avg": 74.4
     },
     {
-      "id": "synth_25d13b33",
+      "id": "synth_1068c27d",
       "company": "SynthCorp 456",
       "city": "San Francisco",
       "country": "USA",
@@ -8212,7 +8212,7 @@
       "pct_above_global_avg": -96.1
     },
     {
-      "id": "synth_46753928",
+      "id": "synth_56db88ea",
       "company": "SynthCorp 457",
       "city": "Dubai",
       "country": "UAE",
@@ -8230,7 +8230,7 @@
       "pct_above_global_avg": -70.7
     },
     {
-      "id": "synth_25992528",
+      "id": "synth_f5afcd87",
       "company": "SynthCorp 458",
       "city": "Seattle",
       "country": "USA",
@@ -8248,7 +8248,7 @@
       "pct_above_global_avg": -90.4
     },
     {
-      "id": "synth_f50478f0",
+      "id": "synth_3bc715d5",
       "company": "SynthCorp 459",
       "city": "Dubai",
       "country": "UAE",
@@ -8266,7 +8266,7 @@
       "pct_above_global_avg": -98.7
     },
     {
-      "id": "synth_a88ebe9c",
+      "id": "synth_39422fed",
       "company": "SynthCorp 460",
       "city": "Toronto",
       "country": "Canada",
@@ -8284,7 +8284,7 @@
       "pct_above_global_avg": -98.0
     },
     {
-      "id": "synth_0a3ef0da",
+      "id": "synth_d6b77b9c",
       "company": "SynthCorp 461",
       "city": "Shanghai",
       "country": "China",
@@ -8302,7 +8302,7 @@
       "pct_above_global_avg": 343.7
     },
     {
-      "id": "synth_e29964e6",
+      "id": "synth_4db81cda",
       "company": "SynthCorp 462",
       "city": "Toronto",
       "country": "Canada",
@@ -8320,7 +8320,7 @@
       "pct_above_global_avg": 463.5
     },
     {
-      "id": "synth_3943aa0d",
+      "id": "synth_ca188c8e",
       "company": "SynthCorp 463",
       "city": "Shanghai",
       "country": "China",
@@ -8338,7 +8338,7 @@
       "pct_above_global_avg": -98.0
     },
     {
-      "id": "synth_751003cf",
+      "id": "synth_211c7d60",
       "company": "SynthCorp 464",
       "city": "New York",
       "country": "USA",
@@ -8356,7 +8356,7 @@
       "pct_above_global_avg": -76.7
     },
     {
-      "id": "synth_a174dc3e",
+      "id": "synth_3f2aec41",
       "company": "SynthCorp 465",
       "city": "Singapore",
       "country": "Singapore",
@@ -8374,7 +8374,7 @@
       "pct_above_global_avg": 36.7
     },
     {
-      "id": "synth_f3bb6d77",
+      "id": "synth_3815cfec",
       "company": "SynthCorp 466",
       "city": "Beijing",
       "country": "China",
@@ -8392,7 +8392,7 @@
       "pct_above_global_avg": -98.5
     },
     {
-      "id": "synth_f86df6ad",
+      "id": "synth_4cf6695f",
       "company": "SynthCorp 467",
       "city": "Paris",
       "country": "France",
@@ -8410,7 +8410,7 @@
       "pct_above_global_avg": -99.2
     },
     {
-      "id": "synth_95c50a35",
+      "id": "synth_2063ed78",
       "company": "SynthCorp 468",
       "city": "San Francisco",
       "country": "USA",
@@ -8428,7 +8428,7 @@
       "pct_above_global_avg": -37.0
     },
     {
-      "id": "synth_9dd1997b",
+      "id": "synth_2701127a",
       "company": "SynthCorp 469",
       "city": "Boston",
       "country": "USA",
@@ -8446,7 +8446,7 @@
       "pct_above_global_avg": 41.6
     },
     {
-      "id": "synth_0e80d9c5",
+      "id": "synth_ab43ed4b",
       "company": "SynthCorp 470",
       "city": "Berlin",
       "country": "Germany",
@@ -8464,7 +8464,7 @@
       "pct_above_global_avg": -87.2
     },
     {
-      "id": "synth_65d0a486",
+      "id": "synth_273390c4",
       "company": "SynthCorp 471",
       "city": "Seattle",
       "country": "USA",
@@ -8482,7 +8482,7 @@
       "pct_above_global_avg": -9.7
     },
     {
-      "id": "synth_60183f52",
+      "id": "synth_e398518e",
       "company": "SynthCorp 472",
       "city": "London",
       "country": "UK",
@@ -8500,7 +8500,7 @@
       "pct_above_global_avg": -90.0
     },
     {
-      "id": "synth_633f27eb",
+      "id": "synth_f0de5278",
       "company": "SynthCorp 473",
       "city": "Singapore",
       "country": "Singapore",
@@ -8518,7 +8518,7 @@
       "pct_above_global_avg": -69.1
     },
     {
-      "id": "synth_594a9956",
+      "id": "synth_db27dc6e",
       "company": "SynthCorp 474",
       "city": "Paris",
       "country": "France",
@@ -8536,7 +8536,7 @@
       "pct_above_global_avg": 55.5
     },
     {
-      "id": "synth_55a00188",
+      "id": "synth_19650acc",
       "company": "SynthCorp 475",
       "city": "New York",
       "country": "USA",
@@ -8554,7 +8554,7 @@
       "pct_above_global_avg": -85.4
     },
     {
-      "id": "synth_95d6dd95",
+      "id": "synth_d7dfe846",
       "company": "SynthCorp 476",
       "city": "Beijing",
       "country": "China",
@@ -8572,7 +8572,7 @@
       "pct_above_global_avg": 126.2
     },
     {
-      "id": "synth_a7022137",
+      "id": "synth_1ff5f6a5",
       "company": "SynthCorp 477",
       "city": "New York",
       "country": "USA",
@@ -8590,7 +8590,7 @@
       "pct_above_global_avg": 180.8
     },
     {
-      "id": "synth_44738f3c",
+      "id": "synth_a4c20a8a",
       "company": "SynthCorp 478",
       "city": "Austin",
       "country": "USA",
@@ -8608,7 +8608,7 @@
       "pct_above_global_avg": 655.3
     },
     {
-      "id": "synth_cac7762b",
+      "id": "synth_f5db13a1",
       "company": "SynthCorp 479",
       "city": "San Francisco",
       "country": "USA",
@@ -8626,7 +8626,7 @@
       "pct_above_global_avg": 37.2
     },
     {
-      "id": "synth_815f3cbe",
+      "id": "synth_ed1e8325",
       "company": "SynthCorp 480",
       "city": "Singapore",
       "country": "Singapore",
@@ -8644,7 +8644,7 @@
       "pct_above_global_avg": -91.6
     },
     {
-      "id": "synth_3576d1aa",
+      "id": "synth_f8507081",
       "company": "SynthCorp 481",
       "city": "Sydney",
       "country": "Australia",
@@ -8662,7 +8662,7 @@
       "pct_above_global_avg": 20.5
     },
     {
-      "id": "synth_d6ae6681",
+      "id": "synth_f7143484",
       "company": "SynthCorp 482",
       "city": "Shanghai",
       "country": "China",
@@ -8680,7 +8680,7 @@
       "pct_above_global_avg": 3.0
     },
     {
-      "id": "synth_d66ef777",
+      "id": "synth_b638c81e",
       "company": "SynthCorp 483",
       "city": "Boston",
       "country": "USA",
@@ -8698,7 +8698,7 @@
       "pct_above_global_avg": -82.3
     },
     {
-      "id": "synth_d4529447",
+      "id": "synth_3778e1bf",
       "company": "SynthCorp 484",
       "city": "Singapore",
       "country": "Singapore",
@@ -8716,7 +8716,7 @@
       "pct_above_global_avg": 42.0
     },
     {
-      "id": "synth_828ad20a",
+      "id": "synth_a4d2ab82",
       "company": "SynthCorp 485",
       "city": "London",
       "country": "UK",
@@ -8734,7 +8734,7 @@
       "pct_above_global_avg": -97.0
     },
     {
-      "id": "synth_62252142",
+      "id": "synth_ff81ab19",
       "company": "SynthCorp 486",
       "city": "Toronto",
       "country": "Canada",
@@ -8752,7 +8752,7 @@
       "pct_above_global_avg": 268.8
     },
     {
-      "id": "synth_efc7c78b",
+      "id": "synth_a4484585",
       "company": "SynthCorp 487",
       "city": "Boston",
       "country": "USA",
@@ -8770,7 +8770,7 @@
       "pct_above_global_avg": -41.2
     },
     {
-      "id": "synth_02419796",
+      "id": "synth_54500f67",
       "company": "SynthCorp 488",
       "city": "Beijing",
       "country": "China",
@@ -8788,7 +8788,7 @@
       "pct_above_global_avg": 65.0
     },
     {
-      "id": "synth_c3058057",
+      "id": "synth_bb494048",
       "company": "SynthCorp 489",
       "city": "Toronto",
       "country": "Canada",
@@ -8806,7 +8806,7 @@
       "pct_above_global_avg": -76.4
     },
     {
-      "id": "synth_199153c3",
+      "id": "synth_a8510f04",
       "company": "SynthCorp 490",
       "city": "Amsterdam",
       "country": "Netherlands",
@@ -8824,7 +8824,7 @@
       "pct_above_global_avg": 27.8
     },
     {
-      "id": "synth_468148e4",
+      "id": "synth_712cc0e9",
       "company": "SynthCorp 491",
       "city": "Bangalore",
       "country": "India",
@@ -8842,7 +8842,7 @@
       "pct_above_global_avg": -98.6
     },
     {
-      "id": "synth_916f02f5",
+      "id": "synth_3d82c89b",
       "company": "SynthCorp 492",
       "city": "Bangalore",
       "country": "India",
@@ -8860,7 +8860,7 @@
       "pct_above_global_avg": -96.8
     },
     {
-      "id": "synth_5d550aaa",
+      "id": "synth_00a15be4",
       "company": "SynthCorp 493",
       "city": "San Francisco",
       "country": "USA",
@@ -8878,7 +8878,7 @@
       "pct_above_global_avg": 299.3
     },
     {
-      "id": "synth_158a22d6",
+      "id": "synth_3f78c9d3",
       "company": "SynthCorp 494",
       "city": "Seattle",
       "country": "USA",
@@ -8896,7 +8896,7 @@
       "pct_above_global_avg": -74.5
     },
     {
-      "id": "synth_7f5ee21f",
+      "id": "synth_d294dd36",
       "company": "SynthCorp 495",
       "city": "Tokyo",
       "country": "Japan",
@@ -8914,7 +8914,7 @@
       "pct_above_global_avg": -96.0
     },
     {
-      "id": "synth_7f279911",
+      "id": "synth_004ed58f",
       "company": "SynthCorp 496",
       "city": "Toronto",
       "country": "Canada",
@@ -8932,7 +8932,7 @@
       "pct_above_global_avg": -96.5
     },
     {
-      "id": "synth_2cac0dd1",
+      "id": "synth_c82b5d5d",
       "company": "SynthCorp 497",
       "city": "Beijing",
       "country": "China",
@@ -8950,7 +8950,7 @@
       "pct_above_global_avg": -72.1
     },
     {
-      "id": "synth_98085117",
+      "id": "synth_6ce62f82",
       "company": "SynthCorp 498",
       "city": "San Francisco",
       "country": "USA",
@@ -8968,7 +8968,7 @@
       "pct_above_global_avg": -63.5
     },
     {
-      "id": "synth_5c70f157",
+      "id": "synth_05a5fa23",
       "company": "SynthCorp 499",
       "city": "Paris",
       "country": "France",
@@ -8986,7 +8986,7 @@
       "pct_above_global_avg": 242.6
     },
     {
-      "id": "synth_d8f127a8",
+      "id": "synth_c0dd0dd4",
       "company": "SynthCorp 500",
       "city": "New York",
       "country": "USA",

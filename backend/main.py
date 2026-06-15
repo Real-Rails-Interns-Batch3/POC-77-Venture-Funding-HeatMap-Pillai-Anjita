@@ -113,16 +113,26 @@ def get_cached_mock_data(sector, stage, year_from, year_to):
             return _mock_data_cache[cache_key]
     
     # READ FROM CSV FILE ONLY - NO HARDCODED FALLBACK
-    csv_path = os.path.join(os.path.dirname(__file__), "venture_funding_data.csv")
+    # Find the most recently generated CSV file
+    csv_dir = os.path.dirname(__file__)
+    csv_files = [f for f in os.listdir(csv_dir) if f.startswith("venture_funding_data_") and f.endswith(".csv")]
+    if csv_files:
+        latest_csv = max(csv_files, key=lambda f: os.path.getmtime(os.path.join(csv_dir, f)))
+        csv_path = os.path.join(csv_dir, latest_csv)
+    else:
+        csv_path = os.path.join(csv_dir, "venture_funding_data.csv")
     
     if not os.path.exists(csv_path):
         raise FileNotFoundError(
             f"CSV file not found at {csv_path}\n"
-            f"Please run: python scripts/generate_mock_files.py to generate the data files first."
+            f"Please generate the CSV file using the mock-data package:\n"
+            f"  from mock_data import MockDataGenerator, save_to_files\n"
+            f"  df = MockDataGenerator(seed=42).generate_dataset(500)\n"
+            f"  save_to_files(df)"
         )
     
     print(f"[Cache] Reading from CSV: {csv_path}")
-    df = pd.read_csv(csv_path)
+    df = pd.read_csv(csv_path, comment='#')
     print(f"[Cache] Loaded {len(df)} rows from CSV")
     
     # Apply filters (since CSV contains all data)

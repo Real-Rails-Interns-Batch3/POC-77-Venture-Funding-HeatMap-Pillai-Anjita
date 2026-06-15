@@ -14,8 +14,8 @@ def export_to_csv(df: pd.DataFrame, include_metadata: bool = True) -> str:
     output = io.StringIO()
     
     if include_metadata:
-        # Add metadata as comments
-        output.write("# ⚠️ SYNTHETIC DATA - Not real investment data\n")
+        # Add metadata as comments (using Unicode-safe characters)
+        output.write("# SYNTHETIC DATA - Not real investment data\n")
         output.write(f"# Generated: {datetime.now().isoformat()}\n")
         output.write("# Data Quality Note: All values are artificially generated for demonstration\n")
         output.write("#\n")
@@ -45,13 +45,13 @@ def save_to_files(df: pd.DataFrame, base_filename: str = "venture_funding_data")
     # Save CSV
     csv_content = export_to_csv(df)
     csv_filename = f"{base_filename}_{timestamp}.csv"
-    with open(csv_filename, "w") as f:
+    with open(csv_filename, "w", encoding='utf-8') as f:
         f.write(csv_content)
     
     # Save JSON
     json_content = export_to_json(df)
     json_filename = f"{base_filename}_{timestamp}.json"
-    with open(json_filename, "w") as f:
+    with open(json_filename, "w", encoding='utf-8') as f:
         f.write(json_content)
     
     return {
