@@ -32,7 +32,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "http://localhost:3001", "http://127.0.0.1:3001"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -64,6 +64,70 @@ HUBS = mock_generator.hubs
 COUNTRY_CODE_TO_HUB = {h["country_code"]: h for h in HUBS}
 
 REGIONAL_AVG_USD_M = 18.4
+
+# ─────────────────────────────────────────────
+# MOCK DATA CACHING (Performance Fix)
+# ─────────────────────────────────────────────
+
+# Cache for mock data to prevent regeneration on every request
+_mock_data_cache = {}
+_mock_data_cache_time = {}
+
+def get_cached_mock_data(sector, stage, year_from, year_to):
+    """Cache mock data - normalizes "All" and None values for consistent keys"""
+    
+    # NORMALIZE: Convert "All" and None to consistent values for cache key
+    if sector is None or sector == "All":
+        cache_sector = "All"
+        gen_sector = None
+    else:
+        cache_sector = sector
+        gen_sector = sector
+    
+    if stage is None or stage == "All":
+        cache_stage = "All"
+        gen_stage = None
+    else:
+        cache_stage = stage
+        gen_stage = stage
+    
+    # Normalize years: None means use defaults
+    if year_from is None:
+        cache_year_from = 2019
+    else:
+        cache_year_from = year_from
+    
+    if year_to is None:
+        cache_year_to = 2024
+    else:
+        cache_year_to = year_to
+    
+    # Create consistent cache key with normalized values
+    cache_key = f"{cache_sector}_{cache_stage}_{cache_year_from}_{cache_year_to}"
+    
+    # Check if cache exists and is less than 5 minutes old
+    if cache_key in _mock_data_cache:
+        age = datetime.utcnow().timestamp() - _mock_data_cache_time.get(cache_key, 0)
+        if age < 300:  # 5 minutes cache
+            print(f"[Cache] Using cached data for {cache_key} (age: {age:.0f}s)")
+            return _mock_data_cache[cache_key]
+    
+    # Generate new data using the generator-friendly values (None for "All")
+    print(f"[Cache] Generating fresh mock data for {cache_key}...")
+    df = mock_generator.generate_with_filters(
+        sector=gen_sector,      # None if "All", otherwise the sector
+        stage=gen_stage,        # None if "All", otherwise the stage
+        year_from=cache_year_from,
+        year_to=cache_year_to,
+        num_rows=500
+    )
+    
+    # Store in cache
+    _mock_data_cache[cache_key] = df
+    _mock_data_cache_time[cache_key] = datetime.utcnow().timestamp()
+    print(f"[Cache] Cached {len(df)} rows for {cache_key}")
+    
+    return df
 
 
 # ─────────────────────────────────────────────
@@ -341,28 +405,54 @@ async def _get_rounds(
 ) -> tuple[pd.DataFrame, str]:
     """
     Returns (DataFrame, data_source_label).
-    Priority: Crunchbase live → mock data package
+    Priority: Crunchbase live → mock data package (cached)
     """
+    # NORMALIZE PARAMETERS for consistent cache keys
+    # Convert None or "All" to consistent values
+    if sector is None or sector == "All":
+        norm_sector = None
+        cache_sector = "All"
+    else:
+        norm_sector = sector
+        cache_sector = sector
+    
+    if stage is None or stage == "All":
+        norm_stage = None
+        cache_stage = "All"
+    else:
+        norm_stage = stage
+        cache_stage = stage
+    
+    # Normalize years: None means use defaults
+    if year_from is None:
+        norm_year_from = 2019
+        cache_year_from = 2019
+    else:
+        norm_year_from = year_from
+        cache_year_from = year_from
+    
+    if year_to is None:
+        norm_year_to = 2024
+        cache_year_to = 2024
+    else:
+        norm_year_to = year_to
+        cache_year_to = year_to
+    
     # Try Crunchbase first if API key is configured
     if CRUNCHBASE_API_KEY:
-        cb_rounds = await fetch_crunchbase_rounds(sector, stage, year_from, year_to)
+        cb_rounds = await fetch_crunchbase_rounds(norm_sector, norm_stage, norm_year_from, norm_year_to)
         if cb_rounds and len(cb_rounds) > 0:
             df = pd.DataFrame(cb_rounds)
             df = _build_df(df)
             source = "🔴 LIVE: Crunchbase API (real venture capital data)"
             return df, source
     
-    # Fallback to mock data package (clearly labeled as synthetic)
-    df = mock_generator.generate_with_filters(
-        sector=sector,
-        stage=stage,
-        year_from=year_from or 2019,
-        year_to=year_to or 2024,
-        num_rows=500
-    )
+    # Fallback to CACHED mock data package with normalized cache keys
+    # Pass the normalized values for cache key consistency
+    df = get_cached_mock_data(cache_sector, cache_stage, cache_year_from, cache_year_to)
     df = _build_df(df)
     
-    source = "⚠️ SYNTHETIC MOCK DATA - Demonstration purposes only. Not real investment data."
+    source = "⚠️ SYNTHETIC MOCK DATA (cached) - Demonstration purposes only. Not real investment data."
     if not CRUNCHBASE_API_KEY:
         source += " Set CRUNCHBASE_API_KEY in .env to use real Crunchbase data."
     
@@ -408,7 +498,12 @@ async def get_heatmap_points(
     """
     df, source = await _get_rounds(sector, stage, year_from, year_to)
 
-    # Fetch World Bank context for all unique country codes
+    # FILTER EDGE CASES: Remove negative amounts and future dates from display
+    df = df[
+        (df["amount_usd_m"] > 0) &  # Exclude negative amounts
+        (df["year"] <= 2024)         # Exclude future dates
+    ].copy()
+
     # Fetch World Bank context for all unique country codes
     city_to_cc = {h["city"]: h["country_code"] for h in HUBS}
     country_codes = []
@@ -472,10 +567,16 @@ async def get_heatmap_points(
 async def get_city_rankings(
     sector: Optional[str] = Query(None),
     stage: Optional[str] = Query(None),
-    top_n: int = Query(20, ge=1, le=50),  # ← Change 10 to 20
+    top_n: int = Query(20, ge=1, le=50),
 ):
     """City-level capital formation intelligence, enriched with World Bank GDP data."""
     df, _ = await _get_rounds(sector, stage, None, None)
+
+    # FILTER EDGE CASES: Remove negative amounts and future dates
+    df = df[
+        (df["amount_usd_m"] > 0) &  # Exclude negative amounts (like -$5M)
+        (df["year"] <= 2024)         # Exclude future dates (2025+)
+    ].copy()
 
     city_agg = (
         df.groupby(["city", "country"])
@@ -483,13 +584,17 @@ async def get_city_rankings(
             total_capital=("amount_usd_m", "sum"),
             deal_count=("id", "count"),
             avg_deal=("amount_usd_m", "mean"),
-            top_sector=("sector", lambda x: x.value_counts().index[0]),
-            dominant_stage=("stage", lambda x: x.value_counts().index[0]),
+            top_sector=("sector", lambda x: x.value_counts().index[0] if len(x) > 0 else "N/A"),
+            dominant_stage=("stage", lambda x: x.value_counts().index[0] if len(x) > 0 else "N/A"),
         )
         .reset_index()
         .sort_values("total_capital", ascending=False)
         .head(top_n)
     )
+    
+    # Handle case with no valid data
+    if len(city_agg) == 0:
+        return []
 
     global_max = city_agg["total_capital"].max()
     city_agg["share_pct"] = (city_agg["total_capital"] / city_agg["total_capital"].sum() * 100).round(1)
@@ -520,6 +625,12 @@ async def get_sector_cards(stage: Optional[str] = Query(None)):
     """Per-sector aggregated intelligence cards."""
     df, _ = await _get_rounds(None, stage, None, None)
 
+    # FILTER EDGE CASES: Remove negative amounts and future dates
+    df = df[
+        (df["amount_usd_m"] > 0) &  # Exclude negative amounts (like -$5M)
+        (df["year"] <= 2024)         # Exclude future dates (2025+)
+    ].copy()
+
     sector_agg = (
         df.groupby("sector")
         .agg(
@@ -531,6 +642,10 @@ async def get_sector_cards(stage: Optional[str] = Query(None)):
         .reset_index()
         .sort_values("total_capital", ascending=False)
     )
+
+    # Handle empty result
+    if len(sector_agg) == 0 or sector_agg["total_capital"].sum() == 0:
+        return []
 
     total = sector_agg["total_capital"].sum()
     sector_agg["share_pct"] = (sector_agg["total_capital"] / total * 100).round(1)
@@ -551,6 +666,16 @@ async def get_trend_lines(
 ):
     """Quarterly capital trend data for sparkline/trend chart."""
     df, _ = await _get_rounds(sector, stage, None, None)
+
+    # FILTER EDGE CASES: Remove negative amounts and future dates
+    df = df[
+        (df["amount_usd_m"] > 0) &  # Exclude negative amounts (like -$5M)
+        (df["year"] <= 2024)         # Exclude future dates (2025+)
+    ].copy()
+
+    # Handle empty dataframe
+    if len(df) == 0:
+        return []
 
     df["quarter"] = pd.to_datetime(df["date"]).dt.to_period("Q").astype(str)
     trend = (
@@ -796,22 +921,49 @@ async def get_summary(
     """Top-level KPI summary for Intelligence Sidebar Section A."""
     df, source = await _get_rounds(sector, stage, None, None)
 
-    total_capital = float(df["amount_usd_m"].sum())
-    avg_deal = float(df["amount_usd_m"].mean())
-    top_city = df.groupby("city")["amount_usd_m"].sum().idxmax()
-    top_sector = df.groupby("sector")["amount_usd_m"].sum().idxmax()
+    # EXCLUDE EDGE CASES: Remove rows with negative amounts or future dates (2025+)
+    original_count = len(df)
+    df_filtered = df[
+        (df["amount_usd_m"] > 0) &  # Exclude negative amounts (like -$5M)
+        (df["year"] <= 2024)         # Exclude future dates (2025+)
+    ].copy()
+    
+    excluded_count = original_count - len(df_filtered)
+    if excluded_count > 0:
+        print(f"[Summary] Excluded {excluded_count} edge-case rows (negative amounts or future dates)")
+    
+    # Use filtered dataframe for calculations
+    total_capital = float(df_filtered["amount_usd_m"].sum())
+    avg_deal = float(df_filtered["amount_usd_m"].mean()) if len(df_filtered) > 0 else 0
+    
+    # Handle empty filtered results
+    if len(df_filtered) == 0:
+        return {
+            "total_capital_usd_b": 0,
+            "total_deals": 0,
+            "avg_deal_usd_m": 0,
+            "top_city": "N/A",
+            "top_sector": "N/A",
+            "top3_city_concentration_pct": 0,
+            "global_avg_deal_usd_m": REGIONAL_AVG_USD_M,
+            "pct_above_avg": 0,
+            "data_source": source,
+        }
+    
+    top_city = df_filtered.groupby("city")["amount_usd_m"].sum().idxmax()
+    top_sector = df_filtered.groupby("sector")["amount_usd_m"].sum().idxmax()
     concentration = float(
-        df.groupby("city")["amount_usd_m"].sum().nlargest(3).sum() / total_capital * 100
+        df_filtered.groupby("city")["amount_usd_m"].sum().nlargest(3).sum() / total_capital * 100
     )
 
     return {
         "total_capital_usd_b": round(total_capital / 1000, 2),
-        "total_deals": len(df),
+        "total_deals": len(df_filtered),
         "avg_deal_usd_m": round(avg_deal, 1),
         "top_city": top_city,
         "top_sector": top_sector,
         "top3_city_concentration_pct": round(concentration, 1),
         "global_avg_deal_usd_m": REGIONAL_AVG_USD_M,
-        "pct_above_avg": round((avg_deal - REGIONAL_AVG_USD_M) / REGIONAL_AVG_USD_M * 100, 1),
+        "pct_above_avg": round((avg_deal - REGIONAL_AVG_USD_M) / REGIONAL_AVG_USD_M * 100, 1) if avg_deal > 0 else 0,
         "data_source": source,
     }
