@@ -74,22 +74,22 @@ _mock_data_cache = {}
 _mock_data_cache_time = {}
 
 def get_cached_mock_data(sector, stage, year_from, year_to):
-    """Cache mock data - normalizes "All" and None values for consistent keys"""
+    """Cache mock data - READS FROM CSV FILES ONLY (no hardcoded generation)"""
     
     # NORMALIZE: Convert "All" and None to consistent values for cache key
     if sector is None or sector == "All":
         cache_sector = "All"
-        gen_sector = None
+        filter_sector = None
     else:
         cache_sector = sector
-        gen_sector = sector
+        filter_sector = sector
     
     if stage is None or stage == "All":
         cache_stage = "All"
-        gen_stage = None
+        filter_stage = None
     else:
         cache_stage = stage
-        gen_stage = stage
+        filter_stage = stage
     
     # Normalize years: None means use defaults
     if year_from is None:
@@ -102,30 +102,44 @@ def get_cached_mock_data(sector, stage, year_from, year_to):
     else:
         cache_year_to = year_to
     
-    # Create consistent cache key with normalized values
+    # Create consistent cache key
     cache_key = f"{cache_sector}_{cache_stage}_{cache_year_from}_{cache_year_to}"
     
-    # Check if cache exists and is less than 5 minutes old
+    # Check memory cache first
     if cache_key in _mock_data_cache:
         age = datetime.utcnow().timestamp() - _mock_data_cache_time.get(cache_key, 0)
         if age < 300:  # 5 minutes cache
             print(f"[Cache] Using cached data for {cache_key} (age: {age:.0f}s)")
             return _mock_data_cache[cache_key]
     
-    # Generate new data using the generator-friendly values (None for "All")
-    print(f"[Cache] Generating fresh mock data for {cache_key}...")
-    df = mock_generator.generate_with_filters(
-        sector=gen_sector,      # None if "All", otherwise the sector
-        stage=gen_stage,        # None if "All", otherwise the stage
-        year_from=cache_year_from,
-        year_to=cache_year_to,
-        num_rows=500
-    )
+    # READ FROM CSV FILE ONLY - NO HARDCODED FALLBACK
+    csv_path = os.path.join(os.path.dirname(__file__), "venture_funding_data.csv")
     
-    # Store in cache
+    if not os.path.exists(csv_path):
+        raise FileNotFoundError(
+            f"CSV file not found at {csv_path}\n"
+            f"Please run: python scripts/generate_mock_files.py to generate the data files first."
+        )
+    
+    print(f"[Cache] Reading from CSV: {csv_path}")
+    df = pd.read_csv(csv_path)
+    print(f"[Cache] Loaded {len(df)} rows from CSV")
+    
+    # Apply filters (since CSV contains all data)
+    if filter_sector:
+        df = df[df["sector"] == filter_sector]
+    if filter_stage:
+        df = df[df["stage"] == filter_stage]
+    if cache_year_from:
+        df = df[df["year"] >= cache_year_from]
+    if cache_year_to:
+        df = df[df["year"] <= cache_year_to]
+    
+    print(f"[Cache] After filtering: {len(df)} rows")
+    
+    # Store in memory cache
     _mock_data_cache[cache_key] = df
     _mock_data_cache_time[cache_key] = datetime.utcnow().timestamp()
-    print(f"[Cache] Cached {len(df)} rows for {cache_key}")
     
     return df
 

@@ -1,0 +1,6 @@
+id,company,city,country,country_code,lat,lng,sector,stage,amount_usd_m,lead_investor,date,year,quarter,data_quality_note,pct_above_global_avg
+edge_outlier_001,MegaCorp AI,San Francisco,USA,US,37.7749,-122.4194,AI/ML,Growth,2500.0,SoftBank Vision Fund,2023-06-15,2023,2023Q2,⚠️ SYNTHETIC DATA - Edge case: Outlier large deal,12500.0
+edge_micro_002,NanoStart,Austin,USA,US,30.2672,-97.7431,DeepTech,Pre-Seed,0.05,Angel List Syndicate,2024-01-10,2024,2024Q1,⚠️ SYNTHETIC DATA - Edge case: Micro round,-99.5
+edge_missing_003,Stealth Mode Ltd,London,UK,GB,51.5074,-0.1278,CleanEnergy,Seed,2.5,Undisclosed,2023-12-01,2023,2023Q4,⚠️ SYNTHETIC DATA - Edge case: Undisclosed investor,-75.0
+edge_future_004,FutureTech AI,Singapore,Singapore,SG,1.3521,103.8198,AI/ML,Series A,15.0,Sequoia Capital,2025-06-01,2025,2025Q2,⚠️ SYNTHETIC DATA - Edge case: Future date (error state),50.0
+edge_negative_005,Error Corp,New York,USA,US,40.7128,-74.006,FinTech,Series B,-5.0,Unknown,2023-08-20,2023,2023Q3,⚠️ SYNTHETIC DATA - Edge case: Negative amount (error simulation),-125.0
