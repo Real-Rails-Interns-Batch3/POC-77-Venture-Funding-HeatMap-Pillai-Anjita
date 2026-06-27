@@ -50,12 +50,14 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Real Rails custom colors
-        'cyan-pulse': '#38BDF8',
-        'indigo-overlay': '#818CF8',
-        'obsidian': '#0B1117',
-        'deep-navy': '#1E293B',
-        'slate-rail': '#1F2937',
+        // Capital Formation Rail - Ruby/Maroon Accent
+        'ruby-glow': '#C92A5A',
+        'ruby-light': '#E8497A',
+        'ruby-overlay': '#D43D6B',
+        'maroon-dim': '#8B1A3A',
+        'obsidian': '#07080E',
+        'deep-navy': '#0F101A',
+        'slate-rail': '#1A1A2E',
       },
       borderRadius: {
         lg: "var(--radius)",
