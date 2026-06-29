@@ -1,5 +1,5 @@
 /**
- * Infocreon — Data Adapter Layer
+ * Real Rails — Data Adapter Layer
  * Data sources:
  *   - Crunchbase API (live, requires CRUNCHBASE_API_KEY on backend)
  *   - World Bank API (free, enriches every response)
@@ -107,7 +107,7 @@ async function safeFetch<T>(url: string, fallback: T): Promise<T> {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     return (await res.json()) as T;
   } catch (err) {
-    console.warn(`[API] unavailable — using mock fallback for: ${url}`, err);
+    console.warn(`[Real Rails] API unavailable — using mock fallback for: ${url}`, err);
     return fallback;
   }
 }

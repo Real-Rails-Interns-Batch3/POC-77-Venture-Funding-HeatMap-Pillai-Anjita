@@ -61,15 +61,8 @@ export default function VentureHeatmapMap({ features, loading, onCitySelect }: P
         mapInstanceRef.current.remove();
       }
 
-      const map = L.map(mapRef.current!, {
-        zoomControl: false  // Disable default zoom control
-      }).setView([20, 0], 2);
+      const map = L.map(mapRef.current!).setView([20, 0], 2);
       mapInstanceRef.current = map;
-
-      // Add custom zoom control positioned lower
-      L.control.zoom({
-        position: 'topleft'
-      }).addTo(map);
 
       // Dark CARTO tile layer - matches obsidian #030712
       L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
@@ -98,12 +91,12 @@ export default function VentureHeatmapMap({ features, loading, onCitySelect }: P
             maxZoom: 10,
             max: 1.0,
             gradient: {
-              0.0: "#0a0a14",
-              0.2: "#1a0a14",
-              0.4: "#3a0a1e",
-              0.6: "#8B1A3A",
-              0.8: "#C92A5A",
-              1.0: "#E8497A",
+              0.0: "#0c0f1a",
+              0.2: "#1e3a5f",
+              0.4: "#0f5f8a",
+              0.6: "#38BDF8",
+              0.8: "#818CF8",
+              1.0: "#f0f9ff",
             },
           }).addTo(map);
           console.log("✅ Heatmap added");
@@ -141,7 +134,7 @@ export default function VentureHeatmapMap({ features, loading, onCitySelect }: P
         
         // Determine color based on average deal size vs global avg
         const avgPctAbove = cityFeatures.reduce((sum, f) => sum + f.properties.pct_above_avg, 0) / dealCount;
-        const clusterColor = avgPctAbove >= 0 ? "#C92A5A" : "#D43D6B";
+        const clusterColor = avgPctAbove >= 0 ? "#38BDF8" : "#818CF8";
         
         // Main cluster circle (white border to stand out on heatmap)
         const clusterCircle = L.circleMarker([avgLat, avgLng], {
@@ -171,8 +164,8 @@ export default function VentureHeatmapMap({ features, loading, onCitySelect }: P
         
         // Hover tooltip for city summary
         clusterCircle.bindTooltip(`
-          <strong style="color: #C92A5A">${cityName}</strong><br/>
-          <span style="color: #9CA3AF">Total Capital: </span><strong style="color: #C92A5A">$${(totalCapital / 1000).toFixed(1)}B</strong><br/>
+          <strong style="color: #38BDF8">${cityName}</strong><br/>
+          <span style="color: #9CA3AF">Total Capital: </span><strong style="color: #38BDF8">$${(totalCapital / 1000).toFixed(1)}B</strong><br/>
           <span style="color: #9CA3AF">Deals: </span><strong>${dealCount}</strong><br/>
           <span style="color: #9CA3AF">Avg Deal: </span><strong>$${avgDealSize.toFixed(1)}M</strong><br/>
           <span style="color: #FCD34D">✨ Click to view in sidebar</span>
@@ -185,7 +178,7 @@ export default function VentureHeatmapMap({ features, loading, onCitySelect }: P
         cityFeatures.forEach((f) => {
           const [lng, lat] = f.geometry.coordinates;
           const smallRadius = Math.max(3, Math.min(f.properties.weight * 2, 8));
-          const smallColor = f.properties.pct_above_avg >= 0 ? "#C92A5A" : "#D43D6B";
+          const smallColor = f.properties.pct_above_avg >= 0 ? "#38BDF8" : "#818CF8";
           
           const smallCircle = L.circleMarker([lat, lng], {
             radius: smallRadius,
@@ -245,22 +238,13 @@ export default function VentureHeatmapMap({ features, loading, onCitySelect }: P
         </div>
       )}
 
-      {/* Map overlay label - positioned next to zoom buttons at same level */}
-      <div className="absolute top-[52px] left-16 z-[999] glass-card rounded-lg px-4 py-2.5 pointer-events-none border border-ruby-glow/10">
-        <div className="flex items-center gap-3">
-          <div>
-            <div className="text-[9px] uppercase tracking-[0.15em] text-ruby-glow/60">
-              Capital Formation · Global
-            </div>
-            <div className="text-[11px] font-semibold text-white">
-              {features.length} funding rounds plotted
-            </div>
-          </div>
-          <div className="w-px h-8 bg-ruby-glow/20" />
-          <div className="text-[8px] text-gray-500 text-right leading-tight">
-            <div>Batch 2</div>
-            <div className="text-ruby-glow/40">Infocreon</div>
-          </div>
+      {/* Map overlay label */}
+      <div className="absolute top-4 left-4 z-[999] glass-card rounded-lg px-3 py-2 pointer-events-none">
+        <div className="text-[10px] uppercase tracking-widest text-gray-500 mb-0.5">
+          Capital Formation · Global
+        </div>
+        <div className="text-xs font-semibold text-white">
+          {features.length} funding rounds plotted
         </div>
       </div>
 
@@ -272,7 +256,7 @@ export default function VentureHeatmapMap({ features, loading, onCitySelect }: P
         <div
           className="h-2 w-32 rounded-full"
           style={{
-            background: "linear-gradient(90deg, #1a0a14 0%, #8B1A3A 40%, #C92A5A 70%, #E8497A 100%)",
+            background: "linear-gradient(90deg, #1e3a5f 0%, #38BDF8 60%, #818CF8 100%)",
           }}
         />
         <div className="flex justify-between text-[9px] text-gray-600 mt-0.5">
@@ -288,11 +272,11 @@ export default function VentureHeatmapMap({ features, loading, onCitySelect }: P
         </div>
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-1">
-            <div className="w-3 h-3 rounded-full bg-[#C92A5A]"></div>
+            <div className="w-3 h-3 rounded-full bg-[#38BDF8]"></div>
             <span className="text-[10px] text-gray-300">Above Avg</span>
           </div>
           <div className="flex items-center gap-1">
-            <div className="w-3 h-3 rounded-full bg-[#D43D6B]"></div>
+            <div className="w-3 h-3 rounded-full bg-[#818CF8]"></div>
             <span className="text-[10px] text-gray-300">Below Avg</span>
           </div>
         </div>
@@ -305,14 +289,14 @@ export default function VentureHeatmapMap({ features, loading, onCitySelect }: P
           style={{
             left: tooltip.x + 12,
             top: tooltip.y - 10,
-            border: "1px solid #C92A5A",
-            boxShadow: "0 0 10px rgba(201,42,90,0.2)",
+            border: "1px solid #38BDF8",
+            boxShadow: "0 0 10px rgba(56,189,248,0.2)",
           }}
         >
           <div className="font-semibold text-white mb-1">{tooltip.props.company}</div>
           <div className="text-gray-400 text-[10px] space-y-0.5">
             <div>{tooltip.props.city}, {tooltip.props.country}</div>
-            <div className="text-ruby-glow font-mono">{tooltip.props.amount_display}</div>
+            <div className="text-cyan-pulse font-mono">{tooltip.props.amount_display}</div>
             <div>{tooltip.props.stage} · {tooltip.props.sector}</div>
             <div className={tooltip.props.pct_above_avg >= 0 ? "text-cyan-400" : "text-red-400"}>
               {tooltip.props.insight}
