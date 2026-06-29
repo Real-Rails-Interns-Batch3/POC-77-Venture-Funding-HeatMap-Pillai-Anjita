@@ -8,7 +8,8 @@
   }
   
   body {
-    @apply bg-[#030712] text-white;
+    /* Financial Rail: Cold obsidian with slate-purple undertone */
+    @apply bg-[#07080E] text-[#E8EDF5];
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
@@ -16,9 +17,9 @@
 @layer components {
   /* Glass morphism cards */
   .glass-card {
-    background: rgba(11, 17, 23, 0.8);
-    backdrop-filter: blur(8px);
-    border: 1px solid #1F2937;
+    background: rgba(7, 8, 14, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(181, 37, 71, 0.3);
   }
   
   /* Real Rails custom colors */
@@ -34,83 +35,111 @@
     border-color: #1F2937;
   }
   
-  .text-cyan-pulse {
-    color: #38BDF8;
+  .text-ruby-glow {
+    color: #C92A5A;
+  }
+
+  .bg-ruby-glow {
+    background-color: #C92A5A;
+  }
+
+  .text-ruby-light {
+    color: #E8497A;
+  }
+
+  .bg-ruby-light {
+    background-color: #E8497A;
+  }
+
+  .text-maroon-dim {
+    color: #8B1A3A;
+  }
+
+  .bg-maroon-dim {
+    background-color: #8B1A3A;
   }
   
-  .bg-cyan-pulse {
-    background-color: #38BDF8;
+  .text-ruby-overlay {
+    color: #D43D6B;
+  }
+
+  .bg-ruby-overlay {
+    background-color: #D43D6B;
   }
   
-  .text-indigo-overlay {
-    color: #818CF8;
-  }
-  
-  .bg-indigo-overlay {
-    background-color: #818CF8;
-  }
-  
-  /* Cyan pulse animation */
   .data-pulse {
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    animation: rubyPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
-  
-  @keyframes pulse {
+
+  @keyframes rubyPulse {
     0%, 100% {
       opacity: 1;
-      box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.7);
+      box-shadow: 0 0 0 0 rgba(201, 42, 90, 0.7);
     }
     50% {
       opacity: 0.5;
-      box-shadow: 0 0 0 4px rgba(56, 189, 248, 0);
+      box-shadow: 0 0 0 4px rgba(201, 42, 90, 0);
     }
   }
   
-  /* Custom scrollbar for sidebar */
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 6px;
-  }
-  
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: #1F2937;
+    background: #1A1A2E;
     border-radius: 3px;
   }
-  
+
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #38BDF8;
+    background: #C92A5A;
     border-radius: 3px;
   }
-  
+
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #818CF8;
+    background: #E8497A;
   }
 }
 
-@layer utilities {
-  /* Cyan accent utilities */
-  .accent-cyan-400 {
-    accent-color: #38BDF8;
+  .shadow-ruby-glow {
+    box-shadow: 0 0 40px rgba(201, 42, 90, 0.2), 0 0 80px rgba(201, 42, 90, 0.1);
   }
-  
-  .accent-indigo-400 {
-    accent-color: #818CF8;
+
+  .shadow-ruby-glow-strong {
+    box-shadow: 0 0 60px rgba(201, 42, 90, 0.3), 0 0 120px rgba(201, 42, 90, 0.1);
+  }
+
+@layer utilities {
+  .accent-ruby-400 {
+    accent-color: #C92A5A;
+  }
+
+  .accent-ruby-300 {
+    accent-color: #D43D6B;
   }
 }
+
 .city-highlight {
-  animation: highlightPulse 0.5s ease-in-out 3;
-  background: rgba(56, 189, 248, 0.1);
+  animation: highlightPulseRuby 0.5s ease-in-out 3;
+  background: rgba(201, 42, 90, 0.1);
   border-radius: 8px;
   padding: 4px;
   margin: -4px;
 }
 
-@keyframes highlightPulse {
+@keyframes highlightPulseRuby {
   0%, 100% {
-    background: rgba(56, 189, 248, 0);
-    box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+    background: rgba(201, 42, 90, 0);
+    box-shadow: 0 0 0 0 rgba(201, 42, 90, 0);
   }
   50% {
-    background: rgba(56, 189, 248, 0.2);
-    box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.1);
+    background: rgba(201, 42, 90, 0.2);
+    box-shadow: 0 0 0 4px rgba(201, 42, 90, 0.1);
   }
+}
+
+/* Move Leaflet zoom controls down to avoid header overlap */
+.leaflet-control-zoom {
+  margin-top: 48px !important;
+}
+
+/* Ensure overlay box aligns with zoom controls */
+.leaflet-control-zoom {
+  margin-top: 48px !important;
 }

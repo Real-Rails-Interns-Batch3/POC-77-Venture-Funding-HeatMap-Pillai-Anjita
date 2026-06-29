@@ -1,12 +1,12 @@
 /**
- * Real Rails — Data Adapter Layer
+ * Infocreon — Data Adapter Layer
  * Data sources:
  *   - Crunchbase API (live, requires CRUNCHBASE_API_KEY on backend)
  *   - World Bank API (free, enriches every response)
  *   - Synthetic mock data (auto-fallback when API unavailable)
  */
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://backend:8000";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -107,7 +107,7 @@ async function safeFetch<T>(url: string, fallback: T): Promise<T> {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     return (await res.json()) as T;
   } catch (err) {
-    console.warn(`[Real Rails] API unavailable — using mock fallback for: ${url}`, err);
+    console.warn(`[API] unavailable — using mock fallback for: ${url}`, err);
     return fallback;
   }
 }
@@ -225,3 +225,7 @@ export async function fetchTrends(filters: Partial<FilterState>): Promise<TrendP
 export async function fetchFilterOptions(): Promise<FilterOptions> {
   return safeFetch<FilterOptions>(`${API_BASE}/api/filters/options`, MOCK_FILTER_OPTIONS);
 }
+
+
+
+
